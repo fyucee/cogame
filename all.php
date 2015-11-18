@@ -38,7 +38,7 @@
 					?>
 				</td>
 			</tr>
-			<tr><td height="50" colspan="3"></td></tr>
+			<tr><td height="25" colspan="3"></td></tr>
 			<tr align="left">
 				<td><p align="center">
 					<?php

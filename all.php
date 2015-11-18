@@ -19,7 +19,14 @@
 						$query=mysql_query("select * from posted where id=2");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="">'.$data['title'].'</a>';
+							$title=mysql_fetch_lengths($query);
+							echo '<a id="open" href="">';
+
+							for(int i=0;i<100;i++){
+								echo $title[i]; 
+							}
+
+							echo '</a>';
 							echo $data['isi'];
 						}
 					?>

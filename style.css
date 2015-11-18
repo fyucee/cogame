@@ -1,0 +1,95 @@
+table,tr,td{
+	border-collapse: collapse;
+}
+table#header{
+	background-image: url("image/background_header.png");
+	background-position: center;
+}
+table#menu{
+	margin-bottom: 15px;
+}
+td#search{
+	background-image: url("image/background_search.png");
+	background-position: center;
+}	
+table#ads{
+	background-color: black;
+	margin-bottom: 15px;
+}
+table#posted{
+	background: url("image/background_post.png");
+	background-position: center;
+}
+img#posted{
+	width:300px;
+	margin-top: 15px;
+	margin-left:px;
+}
+img#postedin{
+	width:750px;
+	margin-top: 15px;
+}
+table#copyright{
+	background: url("image/background_header.png") repeat-y;
+	background-position: center;
+	margin-top: 10px;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;	
+	color: lightblue;
+}
+a#open{
+	text-decoration: none;
+	color: lightblue;
+	font-size: 23px;
+	font-weight: bold;
+}
+a:hover,a#open:hover,a#next:hover{
+	color:grey;
+}
+a#title{
+	text-decoration: none;
+	color: white;
+}
+a#title:hover{
+	color:lightblue;
+}
+a#next{
+	text-decoration: none;
+	color: lightblue;
+	font-style: italic;
+}
+img#title:hover{
+	filter:grayscale(100%);
+}
+img#menu{
+	filter: grayscale(100%);
+}
+img#menu:hover{
+	transform: rotate(5deg);
+	filter: grayscale(0);
+}
+img#posted:hover{
+	transform: scale(1.1);
+}
+p{
+	font-size: 18px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:10px;
+}
+p#title{
+	font-size: 23px;
+	font-weight: bold;
+}
+body{
+	background:url("image/background.png") no-repeat fixed;
+	background-size: 100%;
+	background-position: center;
+	background-color: white;
+	font-family: Agency FB;
+	color: white;
+	padding: 0;
+	margin: 0;
+}

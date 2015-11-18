@@ -6,10 +6,9 @@
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select substring(title,1,100) from posted where id=1");
+						$query=mysql_query("select left(title,100) from posted where id=1");
 
-						while($data=mysql_fetch_row($query)){
-							echo '<a id="open" href="">'.$data['title'].'</a>';
+						echo '<a id="open" href="">'.$query.'</a>';
 						}
 					?>
 				</td>

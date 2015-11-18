@@ -10,7 +10,7 @@
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
-							echo substr($data['isi'], 0,300).' ...</p>';
+							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
 					?>
 				</td>
@@ -20,7 +20,7 @@
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
-							echo substr($data['isi'], 0,300).' ...</p>';
+							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
 					?>
 				</td>
@@ -30,7 +30,7 @@
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
-							echo substr($data['isi'], 0,300).' ...</p>';
+							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
 
 						mysql_close();

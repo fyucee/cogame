@@ -9,7 +9,7 @@
 						$query=mysql_query("select * from posted");
 
 						while($data=mysql_fetch_array($query)){
-							echo "<a id="open" href="">".$data['title'];
+							echo '<a id="open" href="">'.$data['title'];
 							echo $data['isi'];
 						}
 

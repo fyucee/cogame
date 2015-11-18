@@ -8,8 +8,8 @@
 					<?php
 						$query=mysql_query("select left(title,100) from posted where id=1");
 
-						echo '<a id="open" href="">'.$query.'</a>';
-						}
+						$data=mysqli_fetch($query);
+						echo '<a id="open" href="">'.$data['title'].'</a>';
 					?>
 				</td>
 				<td width="376"><p align="center">

@@ -4,15 +4,15 @@
 			include("config.php");
 		?>
 			<tr align="left">
-				<td width="376">
+				<td width="376"><p align="center">
 					<?php
 						$query=mysql_query("select * from posted");
 
 						while($data=mysql_fetch_array($query)){
-							echo $data['title'];
+							echo "<a id="open" href="">".$data['title'];
 							echo $data['isi'];
 						}
-						
+
 						mysql_close();
 					?>
 				</td>

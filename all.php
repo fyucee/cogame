@@ -2,6 +2,7 @@
 	<body>
 		<?php
 			include("config.php");
+			header("Content-Type: image/jpeg");
 		?>
 			<tr align="left">
 				<td width="376"><p align="center">

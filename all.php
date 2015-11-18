@@ -2,7 +2,6 @@
 	<body>
 		<?php
 			include("config.php");
-			header("Content-Type: image/jpeg");
 		?>
 			<tr align="left">
 				<td width="376"><p align="center">
@@ -10,7 +9,7 @@
 						$query=mysql_query("select * from posted where id=1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<img id="posted" src="'.$data['image'].'">';
+							echo '<img src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/>';
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}

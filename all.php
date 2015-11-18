@@ -8,9 +8,8 @@
 					<?php
 						$query=mysql_query("select substring(title,1,100) from posted where id=1");
 
-						$data=mysql_fetch_array($query);
-
-						echo '<a id="open" href="">'.$data.'</a>';
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="">'.$data.'</a>';
 						}
 					?>
 				</td>

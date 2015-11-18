@@ -8,9 +8,9 @@
 					<?php
 						$query=mysql_query("select substring(title,1,100) from posted where id=1");
 
-						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="">'.$data['title'].'</a>';
-							echo $data['isi'];
+						$data=mysql_fetch_array($query);
+
+						echo '<a id="open" href="">'.$data.'</a>';
 						}
 					?>
 				</td>

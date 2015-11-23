@@ -7,7 +7,7 @@
 				<td width="376"><p align="center">
 					<?php
 						$query=mysql_query("select * from posted order by date");
-						$data=mysql_fetch_row($query);
+						$data=mysql_fetch_array($query);
 
 						echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 						echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';

@@ -7,7 +7,7 @@
 				<td width="376"><p align="center">
 					<?php
 						$x=0;
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
@@ -19,7 +19,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
@@ -31,7 +31,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
@@ -46,7 +46,7 @@
 			<tr align="left">
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
@@ -58,7 +58,7 @@
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
@@ -70,7 +70,7 @@
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where cat='xone' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where cat like '%xone%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';

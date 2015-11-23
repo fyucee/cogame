@@ -6,35 +6,39 @@
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=1");
+						$x=0;
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
+						$x+=1;
 					?>
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=2");
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
+						$x+=1;
 					?>
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=3");
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
+						$x+=1;
 					?>
 				</td>
 			</tr>
@@ -42,29 +46,31 @@
 			<tr align="left">
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=4");
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
+						$x+=1;
 					?>
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=5");
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a>';
 							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
+						$x+=1;
 					?>
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where id=6");
+						$query=mysql_query("select * from posted order by date limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';

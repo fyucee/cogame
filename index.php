@@ -35,7 +35,7 @@
 
 		<table  align="center" id="ads" width="1130">
 			<tr align="center" height="100">
-				<td>Advertise</td>
+				<td><a href="https://play.google.com/store/apps/dev?id=6535736138875075681"><img src="image/banner.gif"></a></td>
 			</tr>
 		</table>
 		

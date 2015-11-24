@@ -12,7 +12,7 @@
 
 						$query_total=mysql_query("select * from posted");
 						
-						while($data=mysql_fetch_array($query)){
+						while($data=mysql_fetch_array($query_total)){
 							$y+=1;
 						}
 						echo $y;

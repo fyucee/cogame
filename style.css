@@ -60,6 +60,10 @@ a#next{
 	color: lightblue;
 	font-style: italic;
 }
+a#menu{
+	transform: rotate(5deg);
+	filter: grayscale(0);
+}
 img#title:hover{
 	filter:grayscale(100%);
 }

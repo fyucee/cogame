@@ -10,7 +10,7 @@
 					<img id="title" src="image/logo.png" width="100" height="100">
 				</td>
 				<td>
-					<a href="index.php"><font size="7">Conio Gaming</font></a>
+					<a id="title" href="index.php"><font size="7">Conio Gaming</font></a>
 				</td>
 			</tr>
 		</table>

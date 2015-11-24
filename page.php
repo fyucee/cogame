@@ -47,9 +47,11 @@
 			<tr align="center">
 				<td width="750"><p id="title" align="center">
 					<?php
-						echo $data['title'].'<br>';
-						echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
-						echo '<p align="justify">'.$data['isi'].'<br>';
+						while($data=mysql_fetch_array($query)){
+							echo $data['title'].'<br>';
+							echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
+							echo '<p align="justify">'.$data['isi'].'<br>';
+						}
 					?>
 				</td>
 				<td>&nbsp</td>

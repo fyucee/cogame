@@ -16,7 +16,7 @@
 			</script>";
 		}
 		else{
-			echo "<script>window.location='index.php?page=login';</script>";
+			echo "<script>window.location='index.php?login=failed';</script>";
 		}
 	?>
 	</body>

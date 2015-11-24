@@ -21,7 +21,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -33,7 +33,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -45,7 +45,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -60,7 +60,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -72,7 +72,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -84,7 +84,7 @@
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href=""><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="">Read more >><a/></p>';
 						}
 					?>
 				</td>

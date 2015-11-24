@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<?php
-			if($_POST['search']!="")){
+			if($_POST['search']!=""){
 				include('config.php');
 			}
 		?>

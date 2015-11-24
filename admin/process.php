@@ -13,7 +13,7 @@
 		if($check > 0){
 			$_SESSION['admin']=1;
 			echo "<script>alert('Login Successfull');
-			window.history.back();
+			window.location='master.php';
 			</script>";
 		}
 		else{

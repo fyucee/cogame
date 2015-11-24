@@ -7,7 +7,7 @@
 			}
 			else{
 				if($_SESSION['admin']=='1'){
-					echo "You have login as Admin";
+					include('master.php');
 				}else{
 					include('login.php');
 				}

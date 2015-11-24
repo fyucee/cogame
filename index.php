@@ -27,9 +27,10 @@
 					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
 				<td id="search" width="170">
-					<form action=""
+					<form action="search.php" method="get">
 						<input style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
+					</form>
 				</td>
 			</tr>
 		</table>

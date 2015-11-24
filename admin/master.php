@@ -1,10 +1,15 @@
 <html>
 	<body>
 		<?php
-			if($_SESSION['admin']!=0){
-		echo "<a href="logout.php">Logout</a>";
+			if($_SESSION['admin']==1){
+		?>
+		<a href="logout.php">Logout</a>
+		<?php
 			}else{
-		echo "You must login first.";
+				echo $_SESSION['admin'];
+		?>
+		You must login first.
+		<?php
 			}
 		?>
 	</body>

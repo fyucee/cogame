@@ -12,7 +12,7 @@
 		
 		if($check > 0){
 			$_SESSION['admin']=1;
-			echo "<script>window.location='master.php';</script>";
+			echo "<script>window.location='index.php';</script>";
 		}
 		else{
 			echo "<script>window.location='login.php?login=failed';</script>";

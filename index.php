@@ -26,11 +26,7 @@
 					<a id="menu" href="index.php?category=vita"><img id="menu" src="image/menu_psvita.png"></a>
 					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
-				<form action="index.php?search="
-				<?php
-					echo $_POST['search'];
-				?>
-				" method="post">
+				<form action="search.php" method="post">
 					<td id="search" width="170">
 						<input name="search" style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
@@ -47,16 +43,11 @@
 		
 		<table  align="center" id="posted" width="1130">
 			<?php
-				if(!isset($_GET['search'])){
-					if(!isset($_GET['category'])){
-						include('all.php');
-					}
-					else{
-						include('category.php');
-					}
+				if(!isset($_GET['category'])){
+					include('all.php');
 				}
 				else{
-					include('search.php');
+					include('category.php');
 				}
 			?>
 		</table>

@@ -15,7 +15,7 @@
 			echo "<script>window.location='master.php';</script>";
 		}
 		else{
-			echo "<script>window.location='index.php?login=failed';</script>";
+			echo "<script>window.location='login.php?login=failed';</script>";
 		}
 	?>
 	</body>

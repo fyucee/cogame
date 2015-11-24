@@ -26,12 +26,12 @@
 					<a id="menu" href="index.php?category=vita"><img id="menu" src="image/menu_psvita.png"></a>
 					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
-				<td id="search" width="170">
-					<form action="search.php" method="get">
+				<form action="search.php" method="get">
+					<td id="search" width="170">
 						<input style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
-					</form>
-				</td>
+					</td>
+				</form>
 			</tr>
 		</table>
 

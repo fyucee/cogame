@@ -10,6 +10,13 @@
 							$x=0;	
 						}
 
+						$query_total=mysql_query("select * from posted");
+						
+						while($data=mysql_fetch_array($query)){
+							$y+=1;
+						}
+						echo $y;
+
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){

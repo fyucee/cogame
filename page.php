@@ -50,6 +50,9 @@
 			<tr align="center">
 				<td width="750"><p id="title" align="center">
 					<?php
+
+						$query=mysql_query("select * from posted where id='".$_GET['index']."'");
+
 						while($data=mysql_fetch_array($query)){
 							echo $data['title'].'<br>';
 							echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';

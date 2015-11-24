@@ -1,7 +1,7 @@
 <html>
 	<body>
 		<?php
-			if($_SESSION['admin']==1){
+			if($_SESSION['admin']!=0){
 		?>
 		<a href="logout.php">Logout</a>
 		<?php

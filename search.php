@@ -5,7 +5,9 @@
 	</head>
 	<body>
 		<?php
-			include('config.php');
+			if(isset($_POST['search'])){
+				include('config.php');
+			}
 		?>
 		<table align="center" id="header" height="100" width="1166">
 			<tr>

@@ -60,7 +60,7 @@ a#next{
 	color: lightblue;
 	font-style: italic;
 }
-a#menu{
+a#menu:active{
 	transform: rotate(5deg);
 	filter: grayscale(0);
 }

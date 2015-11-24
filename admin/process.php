@@ -11,6 +11,7 @@
 		$check=mysql_num_rows($query);
 		
 		if($check > 0){
+			$_SESSION['admin']=1;
 			echo "<script>alert('Login Successfull');
 			window.history.back();
 			</script>";

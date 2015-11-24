@@ -7,10 +7,10 @@
 		<table align="center" id="header" height="100" width="1166">
 			<tr>
 				<td width="5%" align="center">
-					<a href="index.php"><img id="title" src="image/logo.png" width="100" height="100"></a>
+					<img id="title" src="image/logo.png" width="100" height="100">
 				</td>
-				<td >
-					<a id="title" href="index.php"><font size="7">Conio Gaming</font></a>
+				<td>
+					<a href="index.php"><font size="7">Conio Gaming</font></a>
 				</td>
 			</tr>
 		</table>

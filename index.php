@@ -18,13 +18,13 @@
 		<table align="center" id="menu" width="1130">
 			<tr align="center" height="50">
 				<td align="left">
-					<a href="index.php?category=all"><img id="menu" src="image/menu_all.png"></a>
-					<a href="index.php?category=pc"><img id="menu" src="image/menu_pc.png"></a>
-					<a href="index.php?category=ps4"><img id="menu" src="image/menu_ps4.png"></a>
-					<a href="index.php?category=xboxone"><img id="menu" src="image/menu_xboxone.png"></a>
-					<a href="index.php?category=wiiu"><img id="menu" src="image/menu_wiiu.png"></a>
-					<a href="index.php?category=psvita"><img id="menu" src="image/menu_psvita.png"></a>
-					<a href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
+					<a id="menu" href="index.php?category=all"><img id="menu" src="image/menu_all.png"></a>
+					<a id="menu" href="index.php?category=pc"><img id="menu" src="image/menu_pc.png"></a>
+					<a id="menu" href="index.php?category=ps4"><img id="menu" src="image/menu_ps4.png"></a>
+					<a id="menu" href="index.php?category=xone"><img id="menu" src="image/menu_xboxone.png"></a>
+					<a id="menu" href="index.php?category=wiiu"><img id="menu" src="image/menu_wiiu.png"></a>
+					<a id="menu" href="index.php?category=vita"><img id="menu" src="image/menu_psvita.png"></a>
+					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
 				<td id="search" width="170">
 						<input style="border:none; width:100" type="text" placeholder="Search">

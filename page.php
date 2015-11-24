@@ -2,12 +2,15 @@
 	<head>
 		<title>
 			<?php
-				$_GET['title']
+				echo $_GET['title'];
 			?>
 		</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<?php
+			include('config.php');
+		?>
 		<table align="center" id="header" height="100" width="1166">
 			<tr>
 				<td width="5%" align="center">

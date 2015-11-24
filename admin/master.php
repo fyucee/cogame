@@ -2,13 +2,9 @@
 	<body>
 		<?php
 			if($_SESSION['admin']!=0){
-		?>
-		<a href="logout.php">Logout</a>
-		<?php
+		echo "<a href="logout.php">Logout</a>";
 			}else{
-		?>
-		You must login first.
-		<?php
+		echo "You must login first.";
 			}
 		?>
 	</body>

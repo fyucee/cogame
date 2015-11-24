@@ -18,7 +18,7 @@
 		<table align="center" id="menu" width="1130">
 			<tr align="center" height="50">
 				<td align="left">
-					<a id="menu" href="index.php?category=all"><img id="menu" src="image/menu_all.png"></a>
+					<a id="menu" href="index.php"><img id="menu" src="image/menu_all.png"></a>
 					<a id="menu" href="index.php?category=pc"><img id="menu" src="image/menu_pc.png"></a>
 					<a id="menu" href="index.php?category=ps4"><img id="menu" src="image/menu_ps4.png"></a>
 					<a id="menu" href="index.php?category=xone"><img id="menu" src="image/menu_xboxone.png"></a>
@@ -45,8 +45,7 @@
 						include('all.php');
 					}
 					else{
-						$page = $_GET['category'].".php";
-						include($page);
+						include('category.php');
 					}
 				?>
 		</table>

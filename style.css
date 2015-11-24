@@ -65,6 +65,7 @@ img#title:hover{
 }
 img#menu:active{
 	filter: grayscale(0);
+	transform: rotate(355deg);
 }
 img#menu:hover{
 	transform: rotate(5deg);

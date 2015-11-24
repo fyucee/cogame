@@ -28,7 +28,7 @@
 				</td>
 				<form action="search.php" method="get">
 					<td id="search" width="170">
-						<input style="border:none; width:100" type="text" placeholder="Search">
+						<input name="searching" style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
 					</td>
 				</form>

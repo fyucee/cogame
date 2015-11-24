@@ -10,13 +10,13 @@
 							$x=0;	
 						}
 
-						$query_total=mysql_query("select * from posted where title like '%".$_POST['searching']."%'");
+						$query_total=mysql_query("select * from posted where title like '%".$_GET['search']."%'");
 						
 						while($data=mysql_fetch_array($query_total)){
 							$y+=1;
 						}
 
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -28,7 +28,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -40,7 +40,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -55,7 +55,7 @@
 			<tr align="left">
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -67,7 +67,7 @@
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -79,7 +79,7 @@
 				</td>
 				<td><p align="center">
 					<?php
-						$query=mysql_query("select * from posted where title like '%".$_POST['searching']."%' order by postdate desc limit ".$x.",1");
+						$query=mysql_query("select * from posted where title like '%".$_GET['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';

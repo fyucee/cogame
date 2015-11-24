@@ -43,6 +43,15 @@
 			</table>
 		<?php
 			}
+			if($_GET['logout']=='success'){
+		?>
+			<table bgcolor="green" align="center" width="300">
+				<tr align="center">
+					<td>You've been logout</td>
+				</tr>
+			</table>
+		<?php
+			}
 		?>
 	</body>
 </html>

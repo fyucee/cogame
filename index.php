@@ -27,6 +27,7 @@
 					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
 				<td id="search" width="170">
+					<form action=""
 						<input style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
 				</td>
@@ -41,13 +42,18 @@
 		
 		<table  align="center" id="posted" width="1130">
 			<?php
+				if(!isset($_GET['search'])){
 					if(!isset($_GET['category'])){
 						include('all.php');
 					}
 					else{
 						include('category.php');
 					}
-				?>
+				}
+				else{
+					include('search.php');
+				}
+			?>
 		</table>
 
 		<table  align="center" id="copyright" height="50" width="1130">

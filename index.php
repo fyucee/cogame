@@ -26,9 +26,13 @@
 					<a id="menu" href="index.php?category=vita"><img id="menu" src="image/menu_psvita.png"></a>
 					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
 				</td>
-				<form action="search.php" method="post">
+				<form action="index.php?search="
+				<?php
+					echo $_POST['search'];
+				?>
+				" method="post">
 					<td id="search" width="170">
-						<input name="searching" style="border:none; width:100" type="text" placeholder="Search">
+						<input name="search" style="border:none; width:100" type="text" placeholder="Search">
 						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
 					</td>
 				</form>

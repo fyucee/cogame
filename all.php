@@ -15,7 +15,6 @@
 						while($data=mysql_fetch_array($query_total)){
 							$y+=1;
 						}
-						echo $y;
 
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
@@ -93,8 +92,8 @@
 			</tr>
 			<tr>
 				<td colspan="3"><p align="right">
-					$z=0;
 					<?php
+						$z=0;
 						if($z>0){
 							echo 'Back';
 						}

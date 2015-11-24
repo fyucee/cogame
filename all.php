@@ -19,9 +19,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -31,9 +31,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -43,9 +43,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -58,9 +58,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -70,9 +70,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;
 						}
 					?>
@@ -82,9 +82,9 @@
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?index='.$data['id'].'&title='.$data['title'].'">'.substr($data['title'],0,60).' ...</a>';
-							echo '<a href="page.php?index='.$data['id'].'&title='.$data['title'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
-							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?index='.$data['id'].'&title='.$data['title'].'">Read more >><a/></p>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 						}
 					?>
 				</td>

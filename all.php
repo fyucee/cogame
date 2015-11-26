@@ -53,7 +53,7 @@
 			</tr>
 			<tr><td height="25" colspan="3"></td></tr>
 			<tr align="left">
-				<td><p align="center">
+				<td width="376"><p align="center">
 					<?php
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
@@ -65,7 +65,7 @@
 						}
 					?>
 				</td>
-				<td><p align="center">
+				<td width="376"><p align="center">
 					<?php
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 
@@ -77,7 +77,7 @@
 						}
 					?>
 				</td>
-				<td><p align="center">
+				<td width="376"><p align="center">
 					<?php
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
 

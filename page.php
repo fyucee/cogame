@@ -26,7 +26,7 @@
 						}
 					?>
 				</td>
-				<td>&nbsp</td>
+				<td width="380"><p id="title" align="center">Popular Post</p></td>
 			</tr>
 		</table>
 

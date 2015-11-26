@@ -30,7 +30,7 @@
 						}
 
 						if($y==0){
-							echo'<font size="7"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Not found.</p></font>';
+							echo'<font size="7"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Not found. Alternative via <a href="https://www.google.co.id/search?q='.$_POST['search'].'">Google?</a></p></font>';
 						}
 
 						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");

@@ -9,9 +9,13 @@
 				include('config.php');
 			}
 			include('header.html');
-			echo 'Search result with keyword: "'.$_POST['search'].'"';
 		?>
 		<table  align="center" id="posted" width="1130">
+			<tr align="center">
+				<?php
+					echo '<td>Search result with keyword: "'.$_POST['search'].'"</td>';
+				?>
+			</tr>
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php

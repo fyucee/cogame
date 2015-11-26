@@ -54,7 +54,7 @@ a#open{
 	font-size: 23px;
 	font-weight: bold;
 }
-a:hover,a#open:hover,a#next:hover{
+a:hover,a#open:hover,a#next:hover,a#page:hover{
 	color:grey;
 }
 a#title{

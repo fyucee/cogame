@@ -13,7 +13,7 @@
 		<table  align="center" id="posted" width="1130">
 			<tr align="center">
 				<?php
-					echo '<td>Search result with keyword: "'.$_POST['search'].'"</td>';
+					echo '<td colspan="3" height="25"><font size="5"> Search result with keyword: "'.$_POST['search'].'"</font></td>';
 				?>
 			</tr>
 			<tr align="left">

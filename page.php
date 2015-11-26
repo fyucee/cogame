@@ -21,6 +21,7 @@
 
 						while($data=mysql_fetch_array($query)){
 							echo $data['title'].'<br>';
+							echo '<p align="left">Posted at '.$data['postdate'].'</p>';
 							echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
 							echo '<p align="justify">'.$data['isi'].'<br>';
 						}

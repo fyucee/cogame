@@ -39,10 +39,6 @@ a{
 	font-weight: bold;	
 	color: lightblue;
 }
-a#menu:active{
-	background-color: white;
-	background-position: center;
-}
 a#open{
 	text-decoration: none;
 	color: lightblue;
@@ -67,8 +63,12 @@ a#next{
 img#title:hover{
 	filter:grayscale(100%);
 }
+img#menu{
+	filter: grayscale(100%);
+}
 img#menu:hover{
 	transform: rotate(5deg);
+	filter: grayscale(0);
 }
 img#posted:hover{
 	transform: scale(1.1);

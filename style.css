@@ -43,6 +43,11 @@ a{
 	font-weight: bold;	
 	color: lightblue;
 }
+a#page{
+	text-decoration: none;
+	color: lightblue;
+	font-size: 10px;
+}
 a#open{
 	text-decoration: none;
 	color: lightblue;

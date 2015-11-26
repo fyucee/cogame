@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Searching... <?php echo $_POST['search']; ?></title>
+		<title>Cogame: Search</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
@@ -8,44 +8,9 @@
 			if($_POST['search']!=""){
 				include('config.php');
 			}
+			include('header.html');
+			echo 'Search result with keyword: "'.$_POST['search'].'"';
 		?>
-		<table align="center" id="header" height="100" width="1166">
-			<tr>
-				<td width="5%" align="center">
-					<img id="title" src="image/logo.png" width="100" height="100">
-				</td>
-				<td>
-					<a id="title" href="index.php"><font size="7">Conio Gaming</font></a>
-				</td>
-			</tr>
-		</table>
-
-		<table align="center" id="menu" width="1130">
-			<tr align="center" height="50">
-				<td align="left">
-					<a id="menu" href="index.php"><img id="menu" src="image/menu_all.png"></a>
-					<a id="menu" href="index.php?category=pc"><img id="menu" src="image/menu_pc.png"></a>
-					<a id="menu" href="index.php?category=ps4"><img id="menu" src="image/menu_ps4.png"></a>
-					<a id="menu" href="index.php?category=xone"><img id="menu" src="image/menu_xboxone.png"></a>
-					<a id="menu" href="index.php?category=wiiu"><img id="menu" src="image/menu_wiiu.png"></a>
-					<a id="menu" href="index.php?category=vita"><img id="menu" src="image/menu_psvita.png"></a>
-					<a id="menu" href="index.php?category=mobile"><img id="menu" src="image/menu_mobile.png"></a>
-				</td>
-				<form action="search.php" method="post">
-					<td id="search" width="170">
-						<input name="search" style="border:none; width:100" type="text" placeholder="Search">
-						<input type="image" src="image/search.png" style="vertical-align: middle;" height="20px" width="20px"></a>
-					</td>
-				</form>
-			</tr>
-		</table>
-
-		<table  align="center" id="ads" width="1130">
-			<tr align="center" height="100">
-				<td><a href="https://play.google.com/store/apps/dev?id=6535736138875075681"><img src="image/banner.gif"></a></td>
-			</tr>
-		</table>
-
 		<table  align="center" id="posted" width="1130">
 			<tr align="left">
 				<td width="376"><p align="center">

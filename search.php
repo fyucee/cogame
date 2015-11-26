@@ -17,7 +17,6 @@
 				?>
 			</tr>
 			<tr align="left">
-				<td width="376"><p align="center">
 					<?php
 						if(!isset($x)){
 							$x=0;	
@@ -30,13 +29,15 @@
 						}
 
 						if($y==0){
-							echo'<font size="7"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Not found. Alternative via <a href="https://www.google.co.id/search?q='.$_POST['search'].'">Google?</a></p></font>';
+							echo'<td colspan="3"><p align="center">
+								<font size="7"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Not found. Alternative via <a href="https://www.google.co.id/search?q='.$_POST['search'].'">Google</a>?</p></font>';
 						}
 
 						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<td width="376"><p align="center">
+									<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
 							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
 							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
 							$x+=1;

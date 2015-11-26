@@ -30,7 +30,7 @@
 				<td colspan="2" height="50" width="380"><p id="title" align="center">Popular Post</p></td>
 			</tr>
 			<?php
-				$query=mysql_query("select * from posted order by view, postdate desc limit ".$x.",1");
+				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
 			
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
@@ -40,21 +40,21 @@
 					$x+=1;
 				}
 			
-				$query=mysql_query("select * from posted order by view, postdate desc limit ".$x.",1");
+				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
 			
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
-						<td height="50"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
+						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
 						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
 					</tr>';
 					$x+=1;
 				}
 			
-				$query=mysql_query("select * from posted order by view, postdate desc limit ".$x.",1");
+				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
 			
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
-						<td height="50"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
+						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
 						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
 					</tr>';
 					$x+=1;
@@ -69,7 +69,7 @@
 				
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
-						<td height="50"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
+						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
 						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
 					</tr>';
 					$x+=1;
@@ -79,7 +79,7 @@
 				
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
-						<td height="50"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
+						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
 						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
 					</tr>';
 					$x+=1;
@@ -89,7 +89,7 @@
 				
 				while($data=mysql_fetch_array($query)){echo
 					'<tr>
-						<td height="50"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
+						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
 						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
 					</tr>';
 					$x+=1;

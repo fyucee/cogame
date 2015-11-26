@@ -69,7 +69,7 @@
 				</td>
 			</tr>
 			<?php
-				if($y>0){
+				if($y>3){
 					echo '<tr><td height="25" colspan="3"></td></tr>';
 				}
 			?>

@@ -20,9 +20,8 @@
 						$query=mysql_query("select * from posted where id='".$_GET['index']."'");
 
 						while($data=mysql_fetch_array($query)){
-							echo $data['title'].'</p><br>';
-							echo '<i>Posted at '.$data['postdate'].'</i><br>';
-							echo '<img align="center" id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
+							echo $data['title'].'<br>';
+							echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
 							echo '<p align="justify">'.$data['isi'].'<br>';
 						}
 					?>

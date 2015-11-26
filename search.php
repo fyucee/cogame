@@ -11,9 +11,9 @@
 			include('header.html');
 		?>
 		<table  align="center" id="posted" width="1130">
-			<tr align="center">
+			<tr align="left">
 				<?php
-					echo '<td colspan="3" height="50"><font size="6"> Search result with keyword: "'.$_POST['search'].'"</font></td>';
+					echo '<td colspan="3" height="50"><font size="6"><b> Search result with keyword: "'.$_POST['search'].'"</b></font></td>';
 				?>
 			</tr>
 			<tr align="left">
@@ -27,6 +27,10 @@
 						
 						while($data=mysql_fetch_array($query_total)){
 							$y+=1;
+						}
+
+						if($y==0){
+							echo'<font size="5">Not found.</font>';
 						}
 
 						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");

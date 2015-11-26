@@ -39,6 +39,9 @@ a{
 	font-weight: bold;	
 	color: lightblue;
 }
+a#menu:hover{
+	background-color: red;
+}
 a#open{
 	text-decoration: none;
 	color: lightblue;

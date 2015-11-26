@@ -29,6 +29,10 @@ img#postedin{
 	width:750px;
 	margin-top: 15px;
 }
+img#page{
+	width:100px;
+	margin-top: 15px;
+}
 table#copyright{
 	background: url("image/background_header.png") repeat-y;
 	background-position: center;

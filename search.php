@@ -13,7 +13,7 @@
 		<table  align="center" id="posted" width="1130">
 			<tr align="left">
 				<?php
-					echo '<td colspan="3" height="50"><font size="6"><b>&nbsp;Search result with keyword: "'.$_POST['search'].'"</b></font></td>';
+					echo '<td colspan="3" height="50"><font size="6"><b>&nbsp;&nbsp;Search result with keyword: "'.$_POST['search'].'"</b></font></td>';
 				?>
 			</tr>
 			<tr align="left">
@@ -30,7 +30,7 @@
 						}
 
 						if($y==0){
-							echo'<font size="5">Not found.</font>';
+							echo'<font size="5"><p align="left">&nbsp;&nbsp;Not found.</p></font>';
 						}
 
 						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
@@ -68,7 +68,11 @@
 					?>
 				</td>
 			</tr>
-			<tr><td height="25" colspan="3"></td></tr>
+			<?php
+				if($y>0){
+					echo '<tr><td height="25" colspan="3"></td></tr>';
+				}
+			?>
 			<tr align="left">
 				<td><p align="center">
 					<?php

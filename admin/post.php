@@ -8,7 +8,7 @@
 			else{
 				if($_SESSION['admin']=='1'){
 					?>
-						<table align="center" width="1100" border="1">
+						<table id="posted" align="center" width="1100" border="1">
 							<tr align="center" height="50">
 								<td width="50"><font size="4"><a href=""><i>Index</a></td>
 								<td><font size="4"><a href=""><i>Title</a></td>

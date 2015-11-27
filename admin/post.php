@@ -34,7 +34,7 @@
 									while($data=mysql_fetch_array($query)){
 										echo '<tr align="center" height="30">';
 										echo '<td>'.$data['id'].'</td>';
-										echo '<td align="left">'.$data['title'].'</td>';
+										echo '<td align="left">'.substr($data['title'],0,110).'</td>';
 										echo '<td>'.$data['postdate'].'</td>';
 										echo '<td>'.$data['view'].'</td>';
 										echo '<td><a href=""><img src="../image/view.png" title="View"></a> / 

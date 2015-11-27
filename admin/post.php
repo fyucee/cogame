@@ -37,7 +37,7 @@
 										echo '<td align="left">'.substr($data['title'],0,110).'</td>';
 										echo '<td>'.$data['postdate'].'</td>';
 										echo '<td>'.$data['view'].'</td>';
-										echo '<td><a href=""><img src="../image/view.png" title="View"></a> / 
+										echo '<td><a href="../page.php?title='.$data['title'].'&index='.$data['id'].'"><img src="../image/view.png" title="View"></a> / 
 												<a href=""><img src="../image/edit.png" title="Edit"></a> / 
 												<a href=""><img src="../image/delete.png" title="Delete"></a></td></tr>';
 										$x+=1;

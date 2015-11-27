@@ -14,7 +14,7 @@
 								<td><font size="4"><a href="index.php?order=title"><i>Title</a></td>
 								<td width="150"><font size="4"><a href="index.php?order=date"><i>Last Update</a></td>
 								<td width="100"><font size="4"><a href="index.php?order=viewer"><i>Viewer</a></td>
-								<td width="200"><font size="4" color="lightblue"><b><i>Option</td>
+								<td width="100"><font size="4" color="lightblue"><b><i>Option</td>
 							</tr>
 								<?php
 									include('../config.php');

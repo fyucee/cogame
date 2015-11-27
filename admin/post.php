@@ -18,6 +18,7 @@
 							</tr>
 							<tr align="center" height="30">
 								<?php
+									include('config.php');
 									if(!isset($x)){
 										$x=10;	
 									}

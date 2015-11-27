@@ -15,13 +15,22 @@
 		</table>
 		<table align="center" id="posted" width="1130">
 			<tr align="center">
-				<td height="50"><a id="open">Comment</a></td>
-				<td><a id="open">Post</a></td>
+				<td height="50"><a id="open">Post</a></td>
+				<td><a id="open">Comment</a></td>
 				<td><a id="open" href="logout.php">Logout</a></td>
 				<td width="800">&nbsp;</td>
 			</tr>
 			<tr>
-				<td>&nbsp</td>
+				<td colspan="4" align="center">
+					<?php
+						if($_GET['sub'])=="comment"){
+							include('comment.php');
+						}
+						else{
+							include('post.php');
+						}
+					?>
+				</td>
 			</tr>
 		</table>
 	</body>

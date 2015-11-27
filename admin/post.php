@@ -40,6 +40,8 @@
 										echo '<td><a href=""><img src="../image/view.png" title="View"></a> / 
 												<a href=""><img src="../image/edit.png" title="Edit"></a> / 
 												<a href=""><img src="../image/delete.png" title="Delete"></a></td>';
+										$x+=1;
+									}
 								?>
 							</tr>
 						</table>

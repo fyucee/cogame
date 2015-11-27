@@ -26,8 +26,8 @@
 						</table>
 						<table align="center" id="posted" width="1130">
 							<tr align="center">
-								<td height="50"><a id="open">Post</a></td>
-								<td><a id="open">Comment</a></td>
+								<td height="50"><a href="index.php" id="open">Post</a></td>
+								<td><a id="open" href="index.php?sub=post">Comment</a></td>
 								<td><a id="open" href="logout.php">Logout</a></td>
 								<td width="800">&nbsp;</td>
 							</tr>

@@ -23,6 +23,7 @@
 						if(!isset($x)){
 							$x=0;	
 						}
+						$y=0;
 
 						$query_total=mysql_query("select * from posted where title like '%".$_POST['search']."%'");
 						

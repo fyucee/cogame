@@ -22,6 +22,7 @@
 				echo'<title>Cogame</title>';
 			}
 		?>
+		<link rel='shortcut icon' type='image/x-icon' href='image/favicon.ico'>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>

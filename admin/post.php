@@ -29,7 +29,7 @@
 										$y+=1;
 									}
 
-									$query=mysql_query("select * from posted order by id desc limit ".$x.",10");
+									$query=mysql_query("select * from posted order by id desc limit ".$x.",20");
 
 									while($data=mysql_fetch_array($query)){
 										echo '<tr align="center" height="30">';

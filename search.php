@@ -1,103 +1,128 @@
 <html>
 	<head>
-		<title>
-			<?php
-				echo $_GET['title'];
-			?>
-		</title>
+		<title>Cogame: Search</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel='shortcut icon' type='image/x-icon' href='image/favicon.ico'>
 	</head>
 	<body>
 		<?php
-			include('config.php');
+			if($_POST['search']!=""){
+				include('config.php');
+			}
 			include('header.html');
-			$x=0;
 		?>
-		<table align="center" id="posted" width="1130">
-			<tr align="center">
-				<td rowspan="9" width="750"><p id="title" align="center">
+		<table  align="center" id="posted" width="1130">
+			<tr align="left">
+				<?php
+					echo '<td colspan="3" height="50"><font size="6"><b><i>&nbsp;&nbsp;Search result with keyword: "'.$_POST['search'].'"</i></b></font></td>';
+				?>
+			</tr>
+			<tr align="left">
+				<td width="376"><p align="center">
 					<?php
+						if(!isset($x)){
+							$x=0;	
+						}
 
-						$query=mysql_query("select * from posted where id='".$_GET['index']."'");
+						$query_total=mysql_query("select * from posted where title like '%".$_POST['search']."%'");
+						
+						while($data=mysql_fetch_array($query_total)){
+							$y+=1;
+						}
+
+						if($y==0){
+							echo'<font size="6"><p align="left">&nbsp;&nbsp;&nbsp;Not found. Try via <a href="https://www.google.co.id/search?q='.$_POST['search'].'">Google</a>?</p></font>';
+						}
+
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
 
 						while($data=mysql_fetch_array($query)){
-							echo $data['title'].'<br>';
-							echo '<img id="postedin" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'">';
-							echo '<p align="justify">'.$data['isi'].'<br>';
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+							$x+=1;
 						}
 					?>
 				</td>
-				<td colspan="2" height="50" width="380"><p id="title" align="center">Popular Post</p></td>
+				<td width="376"><p align="center">
+					<?php
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
+
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+							$x+=1;
+						}
+					?>
+				</td>
+				<td width="376"><p align="center">
+					<?php
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
+
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+							$x+=1;
+						}
+					?>
+				</td>
 			</tr>
 			<?php
-				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
-			
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
-				}
-			
-				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
-			
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
-				}
-			
-				$query=mysql_query("select * from posted order by view desc, postdate desc limit ".$x.",1");
-			
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
+				if($y>3){
+					echo '<tr><td height="25" colspan="3"></td></tr>';
 				}
 			?>
-			<tr>
-				<td colspan="2" height="50" width="380"><p id="title" align="center">Recent Post</p></td>
+			<tr align="left">
+				<td><p align="center">
+					<?php
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
+
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+							$x+=1;
+						}
+					?>
+				</td>
+				<td><p align="center">
+					<?php
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
+
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+							$x+=1;
+						}
+					?>
+				</td>
+				<td><p align="center">
+					<?php
+						$query=mysql_query("select * from posted where title like '%".$_POST['search']."%' order by postdate desc limit ".$x.",1");
+
+						while($data=mysql_fetch_array($query)){
+							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
+							echo '<a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a><br>';
+							echo '<p align="justify">'.substr($data['isi'], 0,300).' ...</p><p align="right"><a id="next" href="page.php?title='.$data['title'].'&index='.$data['id'].'">Read more >><a/></p>';
+						}
+					?>
+				</td>
 			</tr>
-			<?php
-				$x=0;
-				$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
-				
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
-				}
-				
-				$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
-				
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
-				}
-			
-				$query=mysql_query("select * from posted order by postdate desc limit ".$x.",1");
-				
-				while($data=mysql_fetch_array($query)){echo
-					'<tr>
-						<td height="50"><p align="right"><a href="page.php?title='.$data['title'].'&index='.$data['id'].'"><img id="page" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></a></td>
-						<td width="220"><a id="page" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a></td>
-					</tr>';
-					$x+=1;
-				}
-			?>
 			<tr>
-				<td colspan="2">&nbsp;</td>
+				<td colspan="3"><p align="right">
+					<?php
+						$z=0;
+						if($z>0){
+							echo '<a href="">Back</a>';
+						}
+						if($y-$x>1){
+							echo ' <a href="">Next</a>';
+						}
+					?>
+				</td>
 			</tr>
 		</table>
 

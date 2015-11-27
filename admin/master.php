@@ -3,6 +3,19 @@
 		<link rel="stylesheet" type="text/css" href="../style.css">
 	</head>
 	<body>
+		<?php
+			session_start();
+			if(!isset($_SESSION['admin'])){
+				include('login.php');
+			}
+			else{
+				if($_SESSION['admin']=='1'){
+					include('master.php');
+				}else{
+					include('login.php');
+				}
+			}
+		?>
 		<table align="center" id="header" height="100" width="1166">
 			<tr>
 				<td width="5%" align="center">

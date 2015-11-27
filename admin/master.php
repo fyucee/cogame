@@ -22,14 +22,7 @@
 			</tr>
 			<tr>
 				<td colspan="4" align="center">
-					<?php
-						if($_GET['sub'])=="comment"){
-							include('comment.php');
-						}
-						else{
-							include('post.php');
-						}
-					?>
+					
 				</td>
 			</tr>
 		</table>

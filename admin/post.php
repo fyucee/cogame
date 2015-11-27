@@ -10,10 +10,10 @@
 					?>
 						<table align="center" width="1100" border="2">
 							<tr align="center" height="50">
-								<td width="50"><font size="4"><a href=""><i>Index</a></td>
-								<td><font size="4"><a href=""><i>Title</a></td>
-								<td width="150"><font size="4"><a href=""><i>Last Update</a></td>
-								<td width="100"><font size="4"><a href=""><i>Viewer</a></td>
+								<td width="50"><font size="4"><a href="index.php"><i>Index</a></td>
+								<td><font size="4"><a href="index.php?order=title"><i>Title</a></td>
+								<td width="150"><font size="4"><a href="index.php?order=date"><i>Last Update</a></td>
+								<td width="100"><font size="4"><a href="index.php?order=viewer"><i>Viewer</a></td>
 								<td width="200"><font size="4" color="lightblue"><b><i>Option</td>
 							</tr>
 								<?php
@@ -29,8 +29,16 @@
 										$y+=1;
 									}
 
-									$query=mysql_query("select * from posted order by id desc limit ".$x.",20");
-
+									if($_GET['order']=='title'){
+										$query=mysql_query("select * from posted order by title limit ".$x.",20");	
+									}else if($_GET['order']=='date'){
+										$query=mysql_query("select * from posted order by postdate limit ".$x.",20");	
+									}else if($_GET['order']=='viewer'){
+										$query=mysql_query("select * from posted order by view desc limit ".$x.",20");	
+									}else{
+										$query=mysql_query("select * from posted order by id desc limit ".$x.",20");	
+									}
+									
 									while($data=mysql_fetch_array($query)){
 										echo '<tr align="center" height="30">';
 										echo '<td>'.$data['id'].'</td>';

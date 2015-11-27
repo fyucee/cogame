@@ -52,6 +52,15 @@
 			</table>
 		<?php
 			}
+			if($_GET['process']=='failed'){
+		?>
+			<table bgcolor="red" align="center" width="300">
+				<tr align="center">
+					<td>You must login first!</td>
+				</tr>
+			</table>
+		<?php
+			}
 		?>
 	</body>
 </html>

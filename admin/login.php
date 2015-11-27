@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style.css">
+		<title>
+			Cogame ++
+		</title>
 	</head>
 	<body>
 		<table align="center" height="100">

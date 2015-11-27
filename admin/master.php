@@ -10,7 +10,7 @@
 			}
 			else{
 				if($_SESSION['admin']=='1'){
-					?>
+					echo '
 					<table align="center" id="header" height="100" width="1166">
 						<tr>
 							<td width="5%" align="center">
@@ -30,18 +30,18 @@
 						</tr>
 						<tr>
 							<td colspan="4" align="center">
-							<?php
+							';
 								if($_GET['sub'])=="comment"){
 									include('comment.php');
 								}
 								else{
 									include('post.php');
 								}
-							?>
+						echo '
 							</td>
 						</tr>
 					</table>
-					<?php
+					';
 				}else{
 					echo "<script>window.location='login.php';</script>";
 				}

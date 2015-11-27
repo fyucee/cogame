@@ -1,4 +1,9 @@
 <html>
+	<head>
+		<title>
+			Cogame ++
+		</title>
+	</head>
 	<body>
 		<?php
 			session_start();

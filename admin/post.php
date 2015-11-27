@@ -20,7 +20,7 @@
 								<?php
 									include('../config.php');
 									if(!isset($x)){
-										$x=10;	
+										$x=0;	
 									}
 									$y=0;
 
@@ -30,7 +30,7 @@
 										$y+=1;
 									}
 
-									$query=mysql_query("select * from posted order by id desc limit ".$x.",1");
+									$query=mysql_query("select * from posted order by id desc limit ".$x.",10");
 
 									while($data=mysql_fetch_array($query)){
 										echo '<td>'.$data['id'].'</td>';

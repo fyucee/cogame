@@ -30,7 +30,7 @@
 										$y+=1;
 									}
 
-									$query=mysql_query("select * from posted order by index desc limit ".$x.",1");
+									$query=mysql_query("select * from posted order by id desc limit ".$x.",1");
 
 									while($data=mysql_fetch_array($query)){
 										echo '<td>'.$data['id'].'</td>';

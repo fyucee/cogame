@@ -34,7 +34,7 @@
 								<tr>
 									<td width="110" rowspan="5"></td>
 									<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
-									<td><input name="title" type="text" style="width:800"></td>
+									<td><input name="title" type="text" style="width:800" maxlength="255"></td>
 								</tr>
 								<tr>
 									<td>&nbsp;<font size="5"><b>Content</b></font></td>
@@ -42,7 +42,7 @@
 								</tr>
 								<tr>
 									<td>&nbsp;<font size="5"><b>Category</b></font></td>
-									<td><input name="cat" type="text" style="width:800"></input></td>
+									<td><input name="cat" type="text" style="width:800" maxlength="50"></input></td>
 								</tr>
 								<tr>
 									<td></td>

@@ -40,7 +40,7 @@
 								<td width="110" rowspan="2"></td>
 								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 								<td>:</td>
-								<td><input name="title" type="text" placeholder="Title" style="width:800"></td>
+								<td><input name="title" type="text" style="width:800"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;<font size="5"><b>Content</b></font></td>

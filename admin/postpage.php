@@ -53,7 +53,7 @@
 								<td><input name="title" type="text" style="width:800"></td>
 							</tr>
 							<tr>
-								<td height="50"></td>
+								<td></td>
 								<td></td>
 								<td><font size="2"><b>Note: If more than one, separate that by space.</b></font></td>
 							</tr>

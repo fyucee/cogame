@@ -48,7 +48,7 @@
 								</tr>
 								<tr>
 									<td>&nbsp;<font size="5"><b>Category</b></font></td>
-									<td><input name="cat" type="text" style="width:800"></td>
+									<td><input name="cat" type="text" style="width:800"></input></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -56,11 +56,11 @@
 								</tr>
 								<tr>
 									<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
-									<td><input name="image" type="file"></td>
+									<td><input name="image" type="file"></input></td>
 								</tr>
 								<tr>
 									<td height="50">&nbsp;<font size="5"><b>Date</b></font></td>
-									<td><input name="postdate" type="date"></td>
+									<td><input name="postdate" type="date"></input></td>
 								</tr>
 								<tr>
 									<td align="center" height="50" colspan="4">

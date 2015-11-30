@@ -18,7 +18,7 @@
 						}else if ($_GET['page']>$pageTotal){
 							$page=$pageTotal;
 						}else{
-							$page=$GET['page'];
+							$page=$_GET['page'];
 						}
 						$x=$page*6;
 
@@ -96,7 +96,14 @@
 			</tr>
 			<tr>
 				<td colspan="3"><p align="right">
-					
+					<?php
+						if($page>1){
+							echo "<a href='index.php?page=".($page-1)."'>Back</a>";
+						}
+						if($page<$pageTotal){
+							echo "<a href='index.php?page=".($page+1)."'>Next</a>";
+						}
+					?>
 				</td>
 			</tr>
 		</table>

@@ -31,6 +31,8 @@
 						date_default_timezone_set('Asia/Jakarta');
 						$date = date('Y-m-d H:i:s', time());
 
+						echo $_GET['id'];
+
 						if(!isset($image){
 							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', image='$image', date='$date' where id='".$_GET['id']."'");
 						}else{

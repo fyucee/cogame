@@ -30,7 +30,7 @@
 								<td><a id="open" href="index.php?sub=comment">Comment</a></td>
 								<td><a id="open" href="logout.php">Logout</a></td>
 								<td width="700">&nbsp;</td>
-								<td><a href="" id="title"><font size="5">+ New Post</font></a></td>
+								<td><a href="postpage.php" id="title"><font size="5">+ New Post</font></a></td>
 							</tr>
 							<tr>
 								<td colspan="5" align="center">

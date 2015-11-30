@@ -39,7 +39,7 @@
 									echo'<tr>
 										<td width="110" rowspan="6"></td>
 										<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
-										<td><input name="title" type="text" style="width:800" value="'.$data['title'].'"></td>
+										<td><input name="title" type="text" style="width:800" maxlength="255" value="'.$data['title'].'"></td>
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Content</b></font></td>
@@ -47,7 +47,7 @@
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Category</b></font></td>
-										<td><input name="cat" type="text" style="width:800" value="'.$data['cat'].'"></input></td>
+										<td><input name="cat" type="text" style="width:800" maxlength="50" value="'.$data['cat'].'"></input></td>
 									</tr>
 									<tr>
 										<td></td>

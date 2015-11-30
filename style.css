@@ -109,6 +109,11 @@ textarea{
 	height:300px;
 	resize: none;
 }
+textarea#comment{
+	width:418px;
+	height:100px;
+	resize: none;
+}
 img#edit{
 	width:300px;
 	margin-top: 15px;

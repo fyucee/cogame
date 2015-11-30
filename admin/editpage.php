@@ -47,7 +47,7 @@
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Category</b></font></td>
-										<td><input name="cat" type="text" style="width:800"></input></td>
+										<td><input name="cat" type="text" style="width:800" value="'.$data['cat'].'"></input></td>
 									</tr>
 									<tr>
 										<td></td>

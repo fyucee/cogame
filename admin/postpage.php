@@ -45,7 +45,7 @@
 							<tr>
 								<td>&nbsp;<font size="5"><b>Content</b></font></td>
 								<td>:</td>
-								<td><textarea name="isi" rows="10" cols="30"></textarea></td>
+								<td><textarea name="isi" rows="10" cols="100"></textarea></td>
 							</tr>
 						</table>
 					<?php

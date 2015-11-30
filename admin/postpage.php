@@ -26,8 +26,9 @@
 							</tr>
 						</table>
 						<table align="center" id="posted" width="1130">
-							<tr><td height="15"></td></tr>
-							<tr align="center">
+							<form action="" method="post">
+								<tr><td height="15"></td></tr>
+								<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){
 										echo '<td colspan="3"><font size="6"><b>New Post</b></font></td>';
@@ -35,35 +36,36 @@
 										echo '<td colspan="3"><font size="6"><b>Edit Post</b></font></td>';
 									}
 								?>
-							</tr>
-							<tr>
-								<td width="110" rowspan="5"></td>
-								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
-								<td><input name="title" type="text" style="width:800"></td>
-							</tr>
-							<tr>
-								<td>&nbsp;<font size="5"><b>Content</b></font></td>
-								<td><textarea name="isi"></textarea></td>
-							</tr>
-							<tr>
-								<td>&nbsp;<font size="5"><b>Category</b></font></td>
-								<td><input name="cat" type="text" style="width:800"></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
-							</tr>
-							<tr>
-								<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
-								<td><input name="image" type="file"></td>
-							</tr>
-							<tr>
-								<td align="center" height="50" colspan="4">
-									<input type="submit" value="Submit">
-								</td>
-							</tr>
+								</tr>
+								<tr>
+									<td width="110" rowspan="5"></td>
+									<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
+									<td><input name="title" type="text" style="width:800"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;<font size="5"><b>Content</b></font></td>
+									<td><textarea name="isi"></textarea></td>
+								</tr>
+								<tr>
+									<td>&nbsp;<font size="5"><b>Category</b></font></td>
+									<td><input name="cat" type="text" style="width:800"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
+								</tr>
+								<tr>
+									<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
+									<td><input name="image" type="file"></td>
+								</tr>
+								<tr>
+									<td align="center" height="50" colspan="4">
+										<input type="submit" value="Submit">
+									</td>
+								</tr>
+							</form>
 						</table>
-					<?php
+						<?php
 				}else{
 					echo "<script>window.location='login.php?process=failed';</script>";
 				}

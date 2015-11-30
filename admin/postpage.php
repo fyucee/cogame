@@ -38,7 +38,7 @@
 							<tr>
 								<td height="50">&nbsp;<b>Title</b></td>
 								<td>:</td>
-								<td><input name="title" type="text" placeholder="Title" width="75"></td>
+								<td><input name="title" type="text" placeholder="Title" style="border:none; width:100"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;<b>Content</b></td>

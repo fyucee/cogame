@@ -29,13 +29,7 @@
 							<form action="createprocess.php?mode=new" method="post" enctype="multipart/form-data">
 								<tr><td height="15"></td></tr>
 								<tr align="center">
-								<?php
-									if(!isset($_GET['mode'])){
-										echo '<td colspan="3"><font size="6"><b>New Post</b></font></td>';
-									}else{
-										echo '<td colspan="3"><font size="6"><b>Edit Post</b></font></td>';
-									}
-								?>
+									<td colspan="3"><font size="6"><b>New Post</b></font></td>';
 								</tr>
 								<tr>
 									<td width="110" rowspan="5"></td>

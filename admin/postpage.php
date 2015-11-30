@@ -37,7 +37,7 @@
 								?>
 							</tr>
 							<tr>
-								<td width="110" rowspan="4"></td>
+								<td width="110" rowspan="5"></td>
 								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 								<td><input name="title" type="text" style="width:800"></td>
 							</tr>
@@ -47,11 +47,15 @@
 							</tr>
 							<tr>
 								<td>&nbsp;<font size="5"><b>Category</b></font></td>
-								<td><input name="title" type="text" style="width:800"></td>
+								<td><input name="cat" type="text" style="width:800"></td>
 							</tr>
 							<tr>
 								<td></td>
 								<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
+							</tr>
+							<tr>
+								<td>&nbsp;<font size="5"><b>Image</b></font></td>
+								<td><input name="image" type="file"></td>
 							</tr>
 						</table>
 					<?php

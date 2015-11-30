@@ -33,7 +33,7 @@
 								<td><a href="" id="title">+ New Post</a></td>
 							</tr>
 							<tr>
-								<td colspan="4" align="center">
+								<td colspan="5" align="center">
 									<?php
 										if($_GET['sub']=='comment'){
 											include('comment.php');

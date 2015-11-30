@@ -57,6 +57,11 @@
 								<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
 								<td><input name="image" type="file"></td>
 							</tr>
+							<tr>
+								<td height="50" colspan="2">
+									<input type="submit" value="Submit">
+								</td>
+							</tr>
 						</table>
 					<?php
 				}else{

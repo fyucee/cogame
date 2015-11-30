@@ -95,13 +95,18 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan="3"><p align="right">
+				<td><p align="left">
 					<?php
 						if($page>1){
-							echo "<a href='index.php?page=".($page-1)."'>Back</a>";
+							echo "<a href='index.php?page=".($page-1)."'><font size="5">Back</font></a>";
 						}
+					?>
+				</td>
+				<td></td>
+				<td><p align="left">
+					<?php
 						if($page<$pageTotal){
-							echo "<a href='index.php?page=".($page+1)."'>Next</a>";
+							echo "<a href='index.php?page=".($page+1)."'><font size="5">Next</font></a>";
 						}
 					?>
 				</td>

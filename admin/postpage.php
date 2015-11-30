@@ -38,7 +38,7 @@
 								?>
 								</tr>
 								<tr>
-									<td width="110" rowspan="6"></td>
+									<td width="110" rowspan="5"></td>
 									<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 									<td><input name="title" type="text" style="width:800"></td>
 								</tr>
@@ -59,12 +59,8 @@
 									<td><input name="image" type="file"></input></td>
 								</tr>
 								<tr>
-									<td height="50">&nbsp;<font size="5"><b>Date</b></font></td>
-									<td><input name="postdate" type="date"></input></td>
-								</tr>
-								<tr>
 									<td align="center" height="50" colspan="4">
-										<input type="submit" value="Submit">
+										<input type="submit" value="Submit"></input>
 									</td>
 								</tr>
 							</form>

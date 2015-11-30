@@ -44,7 +44,7 @@
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Content</b></font></td>
-										<td><textarea name="isi" value="'.$data['isi'].'"></textarea></td>
+										<td><textarea name="isi"></textarea></td>
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Category</b></font></td>

@@ -29,16 +29,16 @@
 							<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){
-										echo '<td><font size="6">New Post</font></td>';
+										echo '<td colspan="3"><font size="6">New Post</font></td>';
 									}else{
-										echo '<td><font size="6">Edit Post</font></td>';
+										echo '<td colspan="3"><font size="6">Edit Post</font></td>';
 									}
 								?>
 							</tr>
 							<tr>
-								<td align="center">
-									
-								</td>
+								<td>Title</td>
+								<td>:</td>
+								<td><input name="title" type="text" value="Title"></td>
 							</tr>
 						</table>
 					<?php

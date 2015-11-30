@@ -15,7 +15,7 @@
 			else{
 				if($_SESSION['admin']=='1'){
 					?>
-						<table align="center" id="header" height="100" width="1166" border="5">
+						<table align="center" id="header" height="100" width="1166">
 							<tr>
 								<td width="5%" align="center">
 									<img id="title" src="../image/logo.png" width="100" height="100">
@@ -25,7 +25,7 @@
 								</td>
 							</tr>
 						</table>
-						<table align="center" id="posted" width="1130">
+						<table align="center" id="posted" width="1130" border="5">
 							<tr><td height="15"></td></tr>
 							<tr align="center">
 								<?php

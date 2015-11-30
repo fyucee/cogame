@@ -55,7 +55,7 @@
 									</tr>
 									<tr>
 										<td>&nbsp;<font size="5"><b>Image</b></font></td>
-										<td><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></td>
+										<td><img id="edit" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></td>
 									</tr>
 									<tr>
 										<td></td>

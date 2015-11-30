@@ -26,12 +26,13 @@
 							</tr>
 						</table>
 						<table align="center" id="posted" width="1130">
+							<tr><td height="15"></td></tr>
 							<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){
-										echo '<td colspan="4"><font size="6">New Post</font></td>';
+										echo '<td colspan="4"><font size="6"><b>New Post</b></font></td>';
 									}else{
-										echo '<td colspan="4"><font size="6">Edit Post</font></td>';
+										echo '<td colspan="4"><font size="6"><b>Edit Post</b></font></td>';
 									}
 								?>
 							</tr>

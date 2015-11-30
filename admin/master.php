@@ -27,7 +27,7 @@
 						<table align="center" id="posted" width="1130">
 							<tr align="center">
 								<td height="50"><a href="index.php" id="open">Post</a></td>
-								<td><a id="open" href="index.php?sub=post">Comment</a></td>
+								<td><a id="open" href="index.php?sub=comment">Comment</a></td>
 								<td><a id="open" href="logout.php">Logout</a></td>
 								<td width="800">&nbsp;</td>
 							</tr>
@@ -35,7 +35,7 @@
 								<td colspan="4" align="center">
 									<?php
 										if($_GET['sub']=='comment'){
-						
+											include('comment.php');
 										}
 										else{
 											include('post.php');

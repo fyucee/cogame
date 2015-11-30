@@ -16,7 +16,7 @@
 
 					$query=mysql_query("insert into posted values(null,'".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
-					if(!query){
+					if(!$query){
 						echo "<script>window.history.back();</script>";
 					}else{
 						echo "<script>window.location='index.php';</script>";

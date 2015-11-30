@@ -14,6 +14,9 @@
 			}
 			else{
 				if($_SESSION['admin']=='1'){
+					include("../config.php");
+
+					$query=mysql_query("select * from posted where id = '".$_GET['id']."'");
 					?>
 						<table align="center" id="header" height="100" width="1166">
 							<tr>

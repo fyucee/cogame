@@ -29,7 +29,7 @@
 								<td height="50"><a href="index.php" id="open">Post</a></td>
 								<td><a id="open" href="index.php?sub=comment">Comment</a></td>
 								<td><a id="open" href="logout.php">Logout</a></td>
-								<td width="800">&nbsp;</td>
+								<td width="700">&nbsp;</td>
 								<td align="right"><a href="" id="title">+ New Post</a></td>
 							</tr>
 							<tr>

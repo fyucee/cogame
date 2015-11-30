@@ -11,19 +11,16 @@
 
 					$image=addslashes(file_get_contents($_FILES['image']['tmp_name']));
 
-					echo $_POST['title'];
-					echo $_POST['isi'];
-					echo $_POST['cat'];
-
 					date_default_timezone_set('Asia/Jakarta');
-					$date = date('Y-m-d h:i:s', time());
+					$date = date('Y-m-d H:i:s', time());
 
 					$query=mysql_query("insert into posted values(null,'".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
-					if(!$query){
-						echo "Error";
+					if(!query){
+						echo "<script>window.history.back();</script>";
+					}else{
+						echo "<script>window.location='index.php';</script>";
 					}
-					//echo "<script>window.location='index.php';</script>";
 				}else{
 					echo "<script>window.location='login.php?process=failed';</script>";
 				}

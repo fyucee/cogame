@@ -37,7 +37,7 @@
 								<?php
 									while($data=mysql_fetch_array($query)){
 									echo'<tr>
-										<td width="110" rowspan="5"></td>
+										<td width="110" rowspan="6"></td>
 										<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 										<td><input name="title" type="text" style="width:800" value="'.$data['title'].'"></td>
 									</tr>
@@ -54,7 +54,11 @@
 										<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
 									</tr>
 									<tr>
-										<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
+										<td>&nbsp;<font size="5"><b>Image</b></font></td>
+										<td><img id="posted" src="data:image/jpeg;base64,'.base64_encode( $data['image'] ).'"/></td>
+									</tr>
+									<tr>
+										<td></td>
 										<td><input name="image" type="file"></input></td>
 									</tr>';
 									}

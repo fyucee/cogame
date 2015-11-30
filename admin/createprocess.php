@@ -27,11 +27,16 @@
 					}
 					else if($_GET['mode']=='edit'){
 						$image=addslashes(file_get_contents($_FILES['image']['tmp_name']));						
+						$image_check=getimagesize($_FILES['image']['tmp_name']);
 
 						date_default_timezone_set('Asia/Jakarta');
 						$date = date('Y-m-d H:i:s', time());
 
-						$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', image='$image', date='$date' where id='".$_GET['index']."'");
+						if(!$image_check){
+							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', image='$image', date='$date' where id='".$_GET['index']."'");
+						}else{
+							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', date='$date' where id='".$_GET['index']."'");
+						}
 
 						if(!$query){
 							echo "<script>alert('Editing Failed');

@@ -6,10 +6,23 @@
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php
-			
-						$x=6;
+						$query_total=mysql_query("select * from posted");
+						
+						$row=mysql_num_rows($query_total);
+						$pageTotal=ceil($row/6);
 
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-6.",1");
+						if(!isset($_GET['page'])){
+							$page=1;	
+						}else if($_GET['page']<1){
+							$page=1;
+						}else if ($_GET['page']>$pageTotal){
+							$page=$pageTotal;
+						}else{
+							$page=$_GET['page'];
+						}
+						$x=$page*6;
+
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-6).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -20,7 +33,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-5.",1");
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-5).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -31,7 +44,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-4.",1");
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-4).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -49,7 +62,7 @@
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-3.",1");
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-3).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -60,7 +73,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-2.",1");
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-2).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';
@@ -71,7 +84,7 @@
 				</td>
 				<td width="376"><p align="center">
 					<?php
-						$query=mysql_query("select * from posted order by postdate desc limit ".$x-1.",1");
+						$query=mysql_query("select * from posted order by postdate desc limit ".($x-1).",1");
 
 						while($data=mysql_fetch_array($query)){
 							echo '<a id="open" href="page.php?title='.$data['title'].'&index='.$data['id'].'">'.substr($data['title'],0,60).' ...</a>';

@@ -37,7 +37,7 @@
 								?>
 							</tr>
 							<tr>
-								<td width="110" rowspan="3"></td>
+								<td width="110" rowspan="4"></td>
 								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 								<td>:</td>
 								<td><input name="title" type="text" style="width:800"></td>

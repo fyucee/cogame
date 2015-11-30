@@ -11,6 +11,8 @@
 
 					$image=addslashes(file_get_contents($_FILES['image']['tmp_name']));
 
+					echo $image;
+
 					date_default_timezone_set('Asia/Jakarta');
 					$date = date('Y-m-d h:i:s', time());
 

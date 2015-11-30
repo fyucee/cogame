@@ -1,5 +1,4 @@
 <html>
-<html>
 	<head>
 		<title>Loading...</title>
 	</head>

@@ -36,9 +36,14 @@
 								?>
 							</tr>
 							<tr>
-								<td>Title</td>
+								<td>&nbsp;<b>Title</b></td>
 								<td>:</td>
-								<td><input name="title" type="text" value="Title"></td>
+								<td><input name="title" type="text" placeholder="Title"></td>
+							</tr>
+							<tr>
+								<td>&nbsp;<b>Content</b></td>
+								<td>:</td>
+								<td><input name="isi" type="text"></td>
 							</tr>
 						</table>
 					<?php

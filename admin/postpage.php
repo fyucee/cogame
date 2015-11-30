@@ -28,7 +28,7 @@
 						<table align="center" id="posted" width="1130">
 							<tr align="center">
 								<?php
-									if(!isset($_GET['mode']){
+									if(!isset($_GET['mode'])){
 										echo '<td><font size="6">New Post</font></td>';
 									}else{
 										echo '<td><font size="6">Edit Post</font></td>';

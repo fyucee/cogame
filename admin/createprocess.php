@@ -33,12 +33,9 @@
 						$date = date('Y-m-d H:i:s', time());
 
 						if(!$image_check){
-							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', postdate='$date' where id='".$_POST['id']."'") or die(mysql_error());
-							echo "tidak bergambar";
-							echo $query;
+							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', postdate='$date' where id='".$_POST['id']."'");
 						}else{
 							$query=mysql_query("update posted set title='".$_POST['title']."', isi='".$_POST['isi']."', cat='".$_POST['cat']."', image='$image', postdate='$date' where id='".$_POST['id']."'");
-							echo "bergambar";
 						}
 
 						if(!$query){

@@ -36,9 +36,9 @@
 								?>
 							</tr>
 							<tr>
-								<td>&nbsp;<b>Title</b></td>
+								<td height="50">&nbsp;<b>Title</b></td>
 								<td>:</td>
-								<td><input name="title" type="text" placeholder="Title"></td>
+								<td><input name="title" type="text" placeholder="Title" width="75"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;<b>Content</b></td>

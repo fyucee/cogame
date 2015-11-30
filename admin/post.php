@@ -18,16 +18,21 @@
 							</tr>
 								<?php
 									include('../config.php');
-									if(!isset($x)){
-										$x=0;	
-									}
-									$y=0;
-
 									$query_total=mysql_query("select * from posted");
 						
-									while($data=mysql_fetch_array($query_total)){
-										$y+=1;
+									$row=mysql_num_rows($query_total);
+									$pageTotal=ceil($row/20);
+
+									if(!isset($_GET['page'])){
+										$page=1;	
+									}else if($_GET['page']<1){
+										$page=1;
+									}else if ($_GET['page']>$pageTotal){
+										$page=$pageTotal;
+									}else{
+										$page=$_GET['page'];
 									}
+									$x=($page-1)*20;
 
 									if($_GET['order']=='title'){
 										$query=mysql_query("select * from posted order by title limit ".$x.",20");	
@@ -48,13 +53,31 @@
 										echo '<td><a href="../page.php?title='.$data['title'].'&index='.$data['id'].'"><img src="../image/view.png" title="View"></a> / 
 												<a href=""><img src="../image/edit.png" title="Edit"></a> / 
 												<a href=""><img src="../image/delete.png" title="Delete"></a></td></tr>';
-										$x+=1;
 									}
 								?>
 						</table>
 						<table>
 							<tr>
 								<td>&nbsp;
+								</td>
+							</tr>
+						</table>
+						<table align="center" width="1130">
+							<tr>
+								<td><p align="left">
+									<?php
+										if($page>1){
+											echo "<a id='title' href='index.php?page=".($page-1)."'><font size='7'>Back</font></a>";
+										}
+									?>
+								</td>
+								<td></td>
+								<td><p align="right">
+									<?php
+										if($page<$pageTotal){
+											echo "<a id='title' href='index.php?page=".($page+1)."'><font size='7'>Next</font></a>";
+										}
+									?>
 								</td>
 							</tr>
 						</table>

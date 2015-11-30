@@ -55,7 +55,7 @@
 				</td>
 			</tr>
 			<?php
-				if($y>3){
+				if($row>3){
 					echo '<tr><td height="25" colspan="3"></td></tr>';
 				}
 			?>

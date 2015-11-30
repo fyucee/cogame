@@ -30,32 +30,28 @@
 							<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){
-										echo '<td colspan="4"><font size="6"><b>New Post</b></font></td>';
+										echo '<td colspan="3"><font size="6"><b>New Post</b></font></td>';
 									}else{
-										echo '<td colspan="4"><font size="6"><b>Edit Post</b></font></td>';
+										echo '<td colspan="3"><font size="6"><b>Edit Post</b></font></td>';
 									}
 								?>
 							</tr>
 							<tr>
 								<td width="110" rowspan="4"></td>
 								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
-								<td>:</td>
 								<td><input name="title" type="text" style="width:800"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;<font size="5"><b>Content</b></font></td>
-								<td>:</td>
 								<td><textarea name="isi"></textarea></td>
 							</tr>
 							<tr>
 								<td>&nbsp;<font size="5"><b>Category</b></font></td>
-								<td>:</td>
 								<td><input name="title" type="text" style="width:800"></td>
 							</tr>
 							<tr>
 								<td></td>
-								<td></td>
-								<td><font size="2"><b>Note: If more than one, separate that by space.</b></font></td>
+								<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
 							</tr>
 						</table>
 					<?php

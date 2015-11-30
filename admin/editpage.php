@@ -59,7 +59,9 @@
 									</tr>
 									<tr>
 										<td></td>
-										<td><input name="image" type="file"></input></td>
+										<td><input name="image" type="file"></input>
+											<input name="id" type="hidden" value="'.$data['id'].'"></input>
+										</td>
 									</tr>';
 									}
 								?>

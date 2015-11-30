@@ -14,7 +14,7 @@
 					date_default_timezone_set('Asia/Jakarta');
 					$date = date('Y-m-d h:i:s', time());
 
-					$query=mysql_query("insert into posted values('','".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','')");
+					$query=mysql_query("insert into posted values('','".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
 					//echo "<script>window.location='index.php';</script>";
 				}else{

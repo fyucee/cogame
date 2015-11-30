@@ -29,8 +29,8 @@
 								<td height="50"><a href="index.php" id="open">Post</a></td>
 								<td><a id="open" href="index.php?sub=comment">Comment</a></td>
 								<td><a id="open" href="logout.php">Logout</a></td>
-								<td width="500">&nbsp;</td>
-								<td><a href="" id="title">+ New Post</a></td>
+								<td width="700">&nbsp;</td>
+								<td><a href="" id="title"><font size="5">+ New Post</font></a></td>
 							</tr>
 							<tr>
 								<td colspan="5" align="center">

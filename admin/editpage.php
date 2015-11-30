@@ -58,8 +58,8 @@
 										<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
 										<td><input name="image" type="file"></input></td>
 									</tr>
-										';
 									<tr>
+									';
 								?>
 									<td align="center" height="50" colspan="4">
 										<input type="submit" value="Submit"></input>

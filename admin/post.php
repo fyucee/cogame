@@ -66,7 +66,7 @@
 									if($_GET['order']=='title'){
 										$query=mysql_query("select * from posted order by title limit ".$x.",20");	
 									}else if($_GET['order']=='date'){
-										$query=mysql_query("select * from posted order by postdate limit ".$x.",20");	
+										$query=mysql_query("select * from posted order by postdate desc limit ".$x.",20");	
 									}else if($_GET['order']=='viewer'){
 										$query=mysql_query("select * from posted order by view desc limit ".$x.",20");	
 									}else{

@@ -25,7 +25,7 @@
 								</td>
 							</tr>
 						</table>
-						<table align="center" id="posted" width="1130">
+						<table align="center" id="posted" width="930">
 							<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){

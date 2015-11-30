@@ -16,6 +16,9 @@
 
 					$query=mysql_query("insert into posted values('','".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
+					if(!$query){
+						echo "Error";
+					}
 					//echo "<script>window.location='index.php';</script>";
 				}else{
 					echo "<script>window.location='login.php?process=failed';</script>";

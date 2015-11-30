@@ -10,10 +10,39 @@
 					?>
 						<table align="center" width="1100" border="2">
 							<tr align="center" height="50">
-								<td width="50"><font size="4"><a href="index.php"><i>Index</a></td>
-								<td><font size="4"><a href="index.php?order=title"><i>Title</a></td>
-								<td width="150"><font size="4"><a href="index.php?order=date"><i>Last Update</a></td>
-								<td width="100"><font size="4"><a href="index.php?order=viewer"><i>Viewer</a></td>
+							<?php
+								echo'<td width="50"><font size="4"><a href="index.php"><i>';
+								if(!isset($_GET['order'])){
+									echo '<u>Index</u>';
+								}else{
+									echo 'Index';	
+								}
+								echo'</a></td>';
+
+								echo'<td><font size="4"><a href="index.php?order=title"><i>';
+								if($_GET['order']=='title'){
+								echo'<u>Title</u>';
+								}else{
+								echo'Title';
+								}
+								echo'</a></td>';
+								
+								echo'<td width="150"><font size="4"><a href="index.php?order=date"><i>';
+								if($_GET['order']=='date'){
+								echo'<u>Last Update</u>';
+								}else{
+								echo'Last Update';
+								}
+								echo'</a></td>';
+								
+								echo'<td width="100"><font size="4"><a href="index.php?order=viewer"><i>';
+								if($_GET['order']=='viewer'){
+								echo'<u>Viewer</u>';
+								}else{
+								echo'Viewer';
+								}
+								echo'</a></td>';
+							?>	
 								<td width="100"><font size="4" color="lightblue"><b><i>Option</td>
 							</tr>
 								<?php

@@ -51,7 +51,7 @@
 										echo '<td>'.$data['postdate'].'</td>';
 										echo '<td>'.$data['view'].'</td>';
 										echo '<td><a href="../page.php?title='.$data['title'].'&index='.$data['id'].'"><img src="../image/view.png" title="View"></a> / 
-												<a href="createprocess.php?mode=edit&id='.$data['id'].'"><img src="../image/edit.png" title="Edit"></a> / 
+												<a href="editpage.php?id='.$data['id'].'"><img src="../image/edit.png" title="Edit"></a> / 
 												<a href="deleteprocess.php?id='.$data['id'].'" onClick=\'javascript: return confirm("Are you sure?");\'><img src="../image/delete.png" title="Delete"></a></td></tr>';
 									}
 								?>

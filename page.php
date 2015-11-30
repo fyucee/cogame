@@ -14,7 +14,7 @@
 			include('header.html');
 			$x=0;
 		?>
-		<table align="center" id="posted" width="1130" border="5">
+		<table align="center" id="posted" width="1130">
 			<tr align="center">
 				<td rowspan="9" colspan="2" width="750"><p id="title" align="center">
 					<?php
@@ -105,15 +105,15 @@
 				<form action="commentprocess.php" method="post">
 					<tr>
 						<td width="120"><font size="5">&nbsp;&nbsp;Name</td>
-						<td><input name="name" type="text" style="width:418" maxlength="50"></input></td>
+						<td><input name="name" type="text" style="width:418" maxlength="50" placeholder="Type your name here"></input></td>
 					</tr>
 					<tr>
 						<td width="80"><font size="5">&nbsp;&nbsp;Email</td>
-						<td><input name="mail" type="text" style="width:418" maxlength="100"></input></td>
+						<td><input name="mail" type="text" style="width:418" maxlength="100" placeholder="Type your email address here"></input></td>
 					</tr>
 					<tr>
 						<td height="20" width="80"><font size="5">&nbsp;&nbsp;Comment</td>
-						<td rowspan="2"><textarea id="comment" name="comment"></textarea></input></td>
+						<td rowspan="2"><textarea id="comment" name="comment" placeholder="Type your comment here"></textarea></input></td>
 					</tr>
 					<tr>
 						<td>&nbsp;</td>

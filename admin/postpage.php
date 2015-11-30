@@ -26,7 +26,7 @@
 							</tr>
 						</table>
 						<table align="center" id="posted" width="1130">
-							<form action="" method="post">
+							<form action="" method="post" enctype="multipart/form-data">
 								<tr><td height="15"></td></tr>
 								<tr align="center">
 								<?php

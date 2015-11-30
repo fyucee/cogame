@@ -6,21 +6,8 @@
 			<tr align="left">
 				<td width="376"><p align="center">
 					<?php
-						$query_total=mysql_query("select * from posted");
-						
-						$row=mysql_num_rows($query_total);
-						$pageTotal=ceil($row/6);
-
-						if(!isset($_GET['page'])){
-							$page=1;	
-						}else if($_GET['page']<1){
-							$page=1;
-						}else if ($_GET['page']>$pageTotal){
-							$page=$pageTotal;
-						}else{
-							$page=$_GET['page'];
-						}
-						$x=$page*6;
+			
+						$x=6;
 
 						$query=mysql_query("select * from posted order by postdate desc limit ".$x-6.",1");
 

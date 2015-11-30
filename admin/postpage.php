@@ -54,7 +54,7 @@
 								<td><font size="2"><b>&nbsp;Note: If more than one, separate that by space.</b></font></td>
 							</tr>
 							<tr>
-								<td>&nbsp;<font size="5"><b>Image</b></font></td>
+								<td height="50">&nbsp;<font size="5"><b>Image</b></font></td>
 								<td><input name="image" type="file"></td>
 							</tr>
 						</table>

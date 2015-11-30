@@ -10,6 +10,9 @@
 					include("../config.php");
 
 					$query=mysql_query("delete from posted where id = '".$_GET['id']."'");
+
+					echo "<script>alert('Delete Successfull');
+								window.location='index.php';</script>";
 				}else{
 					echo "<script>window.location='login.php?process=failed';</script>";
 				}

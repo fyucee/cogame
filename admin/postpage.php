@@ -25,7 +25,7 @@
 								</td>
 							</tr>
 						</table>
-						<table align="center" id="posted" width="1130" border="5">
+						<table align="center" id="posted" width="1130">
 							<tr><td height="15"></td></tr>
 							<tr align="center">
 								<?php

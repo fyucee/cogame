@@ -43,7 +43,7 @@
 							<tr>
 								<td>&nbsp;<b>Content</b></td>
 								<td>:</td>
-								<td><input name="isi" type="text"></td>
+								<td><textarea name="isi" rows="10" cols="30"></textarea></td>
 							</tr>
 						</table>
 					<?php

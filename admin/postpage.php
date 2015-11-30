@@ -36,13 +36,13 @@
 								?>
 							</tr>
 							<tr>
-								<td width="100" rowspan="2"></td>
-								<td height="50">&nbsp;<b>Title</b></td>
+								<td width="110" rowspan="2"></td>
+								<td height="50">&nbsp;<font size="5"><b>Title</b></font></td>
 								<td>:</td>
 								<td><input name="title" type="text" placeholder="Title" style="width:800"></td>
 							</tr>
 							<tr>
-								<td>&nbsp;<b>Content</b></td>
+								<td>&nbsp;<font size="5"><b>Content</b></font></td>
 								<td>:</td>
 								<td><textarea name="isi" rows="10" cols="30"></textarea></td>
 							</tr>

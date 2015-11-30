@@ -25,17 +25,18 @@
 								</td>
 							</tr>
 						</table>
-						<table align="center" id="posted" width="930">
+						<table align="center" id="posted" width="1130">
 							<tr align="center">
 								<?php
 									if(!isset($_GET['mode'])){
-										echo '<td colspan="3"><font size="6">New Post</font></td>';
+										echo '<td colspan="4"><font size="6">New Post</font></td>';
 									}else{
-										echo '<td colspan="3"><font size="6">Edit Post</font></td>';
+										echo '<td colspan="4"><font size="6">Edit Post</font></td>';
 									}
 								?>
 							</tr>
 							<tr>
+								<td width="100" rowspan="2"></td>
 								<td height="50">&nbsp;<b>Title</b></td>
 								<td>:</td>
 								<td><input name="title" type="text" placeholder="Title" style="width:800"></td>

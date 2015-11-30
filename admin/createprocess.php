@@ -18,19 +18,19 @@
 						$query=mysql_query("insert into posted values(null,'".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
 						if(!$query){
-							echo "<script>alert('Posting Successfull');
+							echo "<script>alert('Posting Failed');
 								window.history.back();</script>";
 						}else{
-							echo "<script>alert('Posting Failed');
+							echo "<script>alert('Posting Successfull');
 								window.location='index.php';</script>";
 						}
 					}
 					else if($_GET['mode']=='edit'){
 						if(!$query){
-							echo "<script>alert('Editing Successfull');
+							echo "<script>alert('Editing Failed');
 								window.history.back();</script>";
 						}else{
-							echo "<script>alert('Editing Failed');
+							echo "<script>alert('Editing Successfull');
 								window.location='index.php';</script>";
 						}
 					}

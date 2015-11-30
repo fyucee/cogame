@@ -58,7 +58,7 @@
 								<td><input name="image" type="file"></td>
 							</tr>
 							<tr>
-								<td height="50" colspan="2">
+								<td align="center" height="50" colspan="4">
 									<input type="submit" value="Submit">
 								</td>
 							</tr>

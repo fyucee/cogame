@@ -98,7 +98,7 @@
 				<td><p align="left">
 					<?php
 						if($page>1){
-							echo "<a href='index.php?page=".($page-1)."'><font size='5'>Back</font></a>";
+							echo "<a id='title' href='index.php?page=".($page-1)."'><font size='7'>Back</font></a>";
 						}
 					?>
 				</td>
@@ -106,7 +106,7 @@
 				<td><p align="right">
 					<?php
 						if($page<$pageTotal){
-							echo "<a href='index.php?page=".($page+1)."'><font size='5'>Next</font></a>";
+							echo "<a id='title' href='index.php?page=".($page+1)."'><font size='7'>Next</font></a>";
 						}
 					?>
 				</td>

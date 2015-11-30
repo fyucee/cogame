@@ -52,7 +52,7 @@
 										echo '<td>'.$data['view'].'</td>';
 										echo '<td><a href="../page.php?title='.$data['title'].'&index='.$data['id'].'"><img src="../image/view.png" title="View"></a> / 
 												<a href=""><img src="../image/edit.png" title="Edit"></a> / 
-												<a href="deleteprocess.php?id='.$data['id'].'" onclick="return confirm("Are you sure?")"><img src="../image/delete.png" title="Delete"></a></td></tr>';
+												<a href="deleteprocess.php?id='.$data['id'].'" onclick="return confirm('"Are you sure?"')"><img src="../image/delete.png" title="Delete"></a></td></tr>';
 									}
 								?>
 						</table>

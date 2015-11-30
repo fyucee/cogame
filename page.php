@@ -113,7 +113,7 @@
 					</tr>
 					<tr>
 						<td height="20" width="80"><font size="5">&nbsp;&nbsp;Comment</td>
-						<td rowspan="2"><textarea id="comment" name="comment" placeholder="Type your comment here" maxlength="301"></textarea></input></td>
+						<td rowspan="2"><textarea id="comment" name="comment" placeholder="Type your comment here" maxlength="311"></textarea></input></td>
 					</tr>
 					<tr>
 						<td>&nbsp;</td>

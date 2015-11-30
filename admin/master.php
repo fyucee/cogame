@@ -34,7 +34,7 @@
 							<tr>
 								<td colspan="4" align="center">
 									<?php
-										if($_GET['sub']=='post'){
+										if($_GET['sub']=='comment'){
 						
 										}
 										else{

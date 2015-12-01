@@ -30,7 +30,7 @@
 									while($data=mysql_fetch_array($queryCmt)){
 										echo '<tr><td><font size="5">'.$data['name'].'</font> (<i>'.$data['mail'].'</i>)</td></tr>';
 										echo '<tr><td>'.$data['comment'].'</td></tr>';
-										echo '<tr><td><a href="">Delete Comment</a></td></tr>'
+										echo '<tr><td><a href="">Delete Comment</a></td></tr>';
 									}
 
 									if($row==0){

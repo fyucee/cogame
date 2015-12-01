@@ -143,7 +143,7 @@
 				echo'
 					<table align="center" id="posted" width="1130">
 						<tr>
-							<td colspan="2" width="750"><font size="4">&nbsp;'.$data['name'].', said:</font>
+							<td colspan="2" width="750"><font size="4"><b>&nbsp;'.$data['name'].'</b>, said:</font>
 							<td colspan="2" width="380">&nbsp;</td>
 						</tr>
 						<tr>

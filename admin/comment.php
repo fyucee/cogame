@@ -12,7 +12,7 @@
 					$query=mysql_query("select * from posted where id='".$_GET['id']."'");
 
 					?>
-						<table align="center" width="1100" border="2">
+						<table align="center" width="1100">
 							<tr align="center" height="50">
 								<?php
 									while($data=mysql_fetch_array($query)){
@@ -35,6 +35,9 @@
 										echo '<tr><td>No Comment</td></tr>';
 									}
 								?>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
 						</table>
 					<?php
 				}else{

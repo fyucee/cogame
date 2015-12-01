@@ -135,12 +135,13 @@
 			<td colspan="4">&nbsp;</td>
 			<tr>
 			<?php
-				$query=mysql_query("select * from comment where id='".$_GET['index']."'");
+				$queryCmt=mysql_query("select * from comment where id='".$_GET['index']."'");
 
-				$row=mysql_fetch_row($query);
-
-				while($data=mysql_fetch_array($query)){
-					echo'<tr>
+				$row=mysql_fetch_row($queryCmt);
+				
+				while(mysql_fetch_array($queryCmt)){
+				echo'
+					<table align="center" id="posted" width="1130"><tr>
 						<td colspan="2" width="750"><font size="4">&nbsp;'.$data['name'].', said:</font>
 						<p align="justify"><font size="3">&nbsp;'.$data['comment'].'</font></p></td>
 						<td colspan="2" width="380">&nbsp;</td>
@@ -148,7 +149,7 @@
 				}
 
 				if($row>0){
-					echo '<tr><td colspan="2" width="750">&nbsp;</td></tr>';
+					echo '<tr><td colspan="2" width="750">&nbsp;</td></tr></table>';
 				}
 			?>
 		</table>

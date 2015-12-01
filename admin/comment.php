@@ -23,10 +23,16 @@
 								<?php
 									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'");
 
+									$row=mysql_fetch_row($queryCmt);
+
 									while($data=mysql_fetch_array($queryCmt)){
 										echo '<tr><td>'.$data['name'].'</td></tr>';
 										echo '<tr><td>'.$data['email'].'</td></tr>';
 										echo '<tr><td>'.$data['comment'].'</td></tr>';
+									}
+
+									if($row==0){
+										echo '<tr><td>No Comment</td></tr>';
 									}
 								?>
 						</table>

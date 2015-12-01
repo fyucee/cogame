@@ -131,6 +131,7 @@
 					</tr>
 				</form>
 			</tr>
+			</table>
 			<?php
 				$queryCmt=mysql_query("select * from comment where id='".$_GET['index']."'");
 
@@ -145,14 +146,12 @@
 										echo'
 											<font size="4"><b>&nbsp;'.$data['name'].'</b>, said:</font>
 											<br>&nbsp;'.$data['comment'].'<br>';
+									}
 								?>
 							</td>
 							<td colspan="2" width="380">&nbsp;</td>';
 						</tr>
 					</table>
-				<?php
-			?>
-		</table>
 
 		<table  align="center" id="copyright" height="50" width="1130">
 			<tr align="center">

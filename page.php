@@ -147,7 +147,7 @@
 							<td colspan="2" width="380">&nbsp;</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="750"><font size="3">&nbsp;'.$data['comment'].'</font></td>
+							<td colspan="2" width="750">&nbsp;'.$data['comment'].'</td>
 							<td colspan="2" width="380">&nbsp;</td>
 						</tr>';
 				}

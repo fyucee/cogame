@@ -30,7 +30,7 @@
 									while($data=mysql_fetch_array($queryCmt)){
 										echo '<tr><td><font size="5">'.$data['name'].'</font> (<i>'.$data['mail'].'</i>)</td></tr>';
 										echo '<tr><td>'.$data['comment'].'</td></tr>';
-										echo '<tr><td><a href="deletecomment.php?id='.$data['id_cmt'].'"><img src="../image/delete.png"> Delete Comment</a></td></tr>';
+										echo '<tr><td><a href="deletecomment.php?id='.$data['id_cmt'].'" onClick=\'javascript: return confirm("Are you sure?");\'><img src="../image/delete.png"> Delete Comment</a></td></tr>';
 									}
 
 									if($row==0){

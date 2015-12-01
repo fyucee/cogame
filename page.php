@@ -14,7 +14,7 @@
 			include('header.html');
 			$x=0;
 		?>
-		<table align="center" id="posted" width="1130">
+		<table align="center" id="posted" width="1130" border="5">
 			<tr align="center">
 				<td rowspan="9" colspan="2" width="750"><p id="title" align="center">
 					<?php
@@ -132,8 +132,24 @@
 				</form>
 			</tr>
 			<tr>
-			<td>&nbsp;</td>
+			<td colspan="4">&nbsp;</td>
 			<tr>
+			<?php
+				$query=mysql_query("select * from comment where id='".$_GET['index']."'");
+
+				$row=mysql_fetch_row($row);
+
+				while($data=mysql_fetch_array($query)){
+					echo'<tr>
+						<td colspan="2"><font size="4">&nbsp;'.$data['name'].'</font>
+						<p align="justify"><font size="3">&nbsp;'.$data['comment'].'</font></p></td>
+					</tr>';
+				}
+
+				if($row>0){
+					echo '<tr><td colspan="4">&nbsp;</td></tr>';
+				}
+			?>
 		</table>
 
 		<table  align="center" id="copyright" height="50" width="1130">

@@ -16,7 +16,7 @@
 							<tr align="center" height="50">
 								<?php
 									while($data=mysql_fetch_array($query)){
-										echo'<td><font size="6"><b>'.$data['title'].'</b></font></td>';
+										echo'<td><font size="5"><b>'.$data['title'].'</b></font></td>';
 									}
 								?>
 							</tr>
@@ -28,13 +28,13 @@
 									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'") or die(mysql_error());
 
 									while($data=mysql_fetch_array($queryCmt)){
-										echo '<tr><td><font size="5">'.$data['name'].'</font> (<i>'.$data['mail'].'</i>)</td></tr>';
+										echo '<tr><td><font size="4">'.$data['name'].'</font> (<i>'.$data['mail'].'</i>)</td></tr>';
 										echo '<tr><td>'.$data['comment'].'</td></tr>';
 										echo '<tr><td><a href="deletecomment.php?id='.$data['id_cmt'].'" onClick=\'javascript: return confirm("Are you sure?");\'><img src="../image/delete.png"> Delete Comment</a></td></tr>';
 									}
 
 									if($row==0){
-										echo '<tr><td align="center"><font size="5">No Comment</font></td></tr>';
+										echo '<tr><td align="center"><font size="4">No Comment</font></td></tr>';
 									}
 								?>
 								<tr>

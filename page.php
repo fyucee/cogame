@@ -139,7 +139,7 @@
 
 				$row=mysql_fetch_row($queryCmt);
 				
-				while(mysql_fetch_array($queryCmt)){
+				while($data=mysql_fetch_array($queryCmt)){
 				echo'
 					<table align="center" id="posted" width="1130"><tr>
 						<td colspan="2" width="750"><font size="4">&nbsp;'.$data['name'].', said:</font>

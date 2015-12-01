@@ -21,9 +21,11 @@
 								?>
 							</tr>
 								<?php
-									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'") or die(mysql_error());
+									$queryTot=mysql_query("select * from comment where id='".$_GET['id']."'") or die(mysql_error());
 
-									$row=mysql_fetch_row($queryCmt);
+									$row=mysql_fetch_row($queryTot);
+
+									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'") or die(mysql_error());
 
 									while($data=mysql_fetch_array($queryCmt)){
 										echo '<tr><td>'.$data['name'].'</td></tr>';

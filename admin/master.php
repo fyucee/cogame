@@ -27,7 +27,8 @@
 						<table align="center" id="posted" width="1130">
 							<tr align="center">
 								<td align="left"><a href="postpage.php" id="title"><font size="5">&nbsp;&nbsp;+ New Post</font></a></td>
-								<td align="right"><a id="title" href="logout.php"><font size="5">&nbsp;&nbsp;Logout</font></a></td>
+								<td align="right"><a id="title" href="logout.php"><font size="5">Logout</font></a></td>
+								<td width="20"></td>
 							</tr>
 							<tr>
 								<td colspan="5" align="center">

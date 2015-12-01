@@ -143,6 +143,7 @@
 					echo'<tr>
 						<td colspan="2"><font size="4">&nbsp;'.$data['name'].'</font>
 						<p align="justify" width="750"><font size="3">&nbsp;'.$data['comment'].'</font></p></td>
+						<td colspan="2"></td>
 					</tr>';
 				}
 

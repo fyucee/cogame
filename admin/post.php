@@ -76,7 +76,7 @@
 									while($data=mysql_fetch_array($query)){
 										echo '<tr align="center" height="30">';
 										echo '<td>'.$data['id'].'</td>';
-										echo '<td align="left"><a id="title" href=""><u>'.$data['title'].'</u></a></td>';
+										echo '<td align="left"><a id="title" href="">'.$data['title'].'</a></td>';
 										echo '<td>'.$data['postdate'].'</td>';
 										echo '<td>'.$data['view'].'</td>';
 										echo '<td><a href="../page.php?title='.$data['title'].'&index='.$data['id'].'"><img src="../image/view.png" title="View"></a> / 

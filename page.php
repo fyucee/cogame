@@ -131,10 +131,13 @@
 					</tr>
 				</form>
 			</tr>
+			<tr>
+				<td colspan="4" height="10">&nbsp;</td>
+			</tr>
 			<?php
 				$queryCmt=mysql_query("select * from comment where id='".$_GET['index']."'");
 
-				
+
 			?>
 		</table>
 

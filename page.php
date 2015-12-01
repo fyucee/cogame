@@ -143,7 +143,7 @@
 						<td colspan="2">
 							<font size="4">&nbsp;'.$data['name'].'</font><p align="justify">
 								<font size="2">
-									'.$data['name'].'<br>
+									'.$data['comment'].'<br>
 								</font>
 							</p>
 						</td>

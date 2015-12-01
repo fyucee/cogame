@@ -142,7 +142,7 @@
 					echo'<tr>
 						<td colspan="2">
 							<font size="4">&nbsp;&nbsp;<b>'.$data['name'].'</b>, said:</font><br>
-							<font size="2">&&nbsp;&nbsp;'.$data['comment'].'<br><br></font>
+							<font size="2">&nbsp;&nbsp;'.$data['comment'].'<br><br></font>
 						</td>
 					</tr>';
 				}

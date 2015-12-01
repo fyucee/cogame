@@ -102,7 +102,7 @@
 			</tr>
 			<tr>
 				<td colspan="2">&nbsp;<font size="6">&nbsp;Comment :</td>
-				<form action="commentprocess.php" method="post">
+				<form action="comment.php" method="post">
 					<tr>
 						<td width="120"><font size="5">&nbsp;&nbsp;Name</td>
 						<td><input name="name" type="text" style="width:423" maxlength="58" placeholder="Type your name here"></input>

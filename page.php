@@ -14,7 +14,7 @@
 			include('header.html');
 			$x=0;
 		?>
-		<table align="center" id="posted" width="1130" border="5">
+		<table align="center" id="posted" width="1130">
 			<tr align="center">
 				<td rowspan="9" colspan="2" width="750"><p id="title" align="center">
 					<?php

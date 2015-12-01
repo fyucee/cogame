@@ -143,9 +143,9 @@
 						<td colspan="2">
 							<font size="4">&nbsp;<b>'.$data['name'].'</b>, said:</font><p align="justify">
 								<font size="2">
-									'.$data['id'].'
+									'.$data['comment'].'
 								</font>
-							</p><br><br>
+							</p>
 						</td>
 					</tr>';
 				}

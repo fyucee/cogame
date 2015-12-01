@@ -26,9 +26,8 @@
 						</table>
 						<table align="center" id="posted" width="1130">
 							<tr align="center">
-								<td><a href="postpage.php" id="title"><font size="5">+ New Post</font></a></td>
-								<td width="900">&nbsp;</td>
-								<td><a id="title" href="logout.php">Logout</a></td>
+								<td align="left"><a href="postpage.php" id="title"><font size="5">+ New Post</font></a></td>
+								<td align="right"><a id="title" href="logout.php"><font size="5">Logout</font></a></td>
 							</tr>
 							<tr>
 								<td colspan="5" align="center">

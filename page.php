@@ -141,11 +141,15 @@
 				
 				while($data=mysql_fetch_array($queryCmt)){
 				echo'
-					<table align="center" id="posted" width="1130"><tr>
-						<td colspan="2" width="750"><font size="4">&nbsp;'.$data['name'].', said:</font>
-						<p align="justify"><font size="3">&nbsp;'.$data['comment'].'</font></p></td>
-						<td colspan="2" width="380">&nbsp;</td>
-					</tr>';
+					<table align="center" id="posted" width="1130">
+						<tr>
+							<td colspan="2" width="750"><font size="4">&nbsp;'.$data['name'].', said:</font>
+							<td colspan="2" width="380">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2" width="750"><font size="3">&nbsp;'.$data['comment'].'</font></td>
+							<td colspan="2" width="380">&nbsp;</td>
+						</tr>';
 				}
 
 				if($row>0){

@@ -14,7 +14,7 @@
 			include('header.html');
 			$x=0;
 		?>
-		<table align="center" id="posted" width="1130">
+		<table align="center" id="posted" width="1130" border="5">
 			<tr align="center">
 				<td rowspan="9" colspan="2" width="750"><p id="title" align="center">
 					<?php
@@ -105,7 +105,7 @@
 				<form action="comment.php" method="post">
 					<tr>
 						<td width="120"><font size="5">&nbsp;&nbsp;Name</td>
-						<td><input name="name" type="text" style="width:423" maxlength="58" placeholder="Type your name here"></input>
+						<td><input name="name" type="text" style="width:423" maxlength="50" placeholder="Type your name here"></input>
 							<?php	
 								echo'<input name="id" type="hidden" value="'.$_GET['index'].'">';
 								echo'<input name="title" type="hidden" value="'.$_GET['title'].'">';
@@ -114,11 +114,11 @@
 					</tr>
 					<tr>
 						<td width="80"><font size="5">&nbsp;&nbsp;Email</td>
-						<td><input name="mail" type="text" style="width:423" maxlength="58" placeholder="Type your email address here"></input></td>
+						<td><input name="mail" type="text" style="width:423" maxlength="50" placeholder="Type your email address here"></input></td>
 					</tr>
 					<tr>
 						<td height="20" width="80"><font size="5">&nbsp;&nbsp;Comment</td>
-						<td rowspan="2"><textarea id="comment" name="comment" placeholder="Type your comment here" maxlength="311"></textarea></input></td>
+						<td rowspan="2"><textarea id="comment" name="comment" placeholder="Type your comment here" maxlength="150"></textarea></input></td>
 					</tr>
 					<tr>
 						<td>&nbsp;</td>
@@ -134,10 +134,21 @@
 			<tr>
 				<td colspan="4" height="10">&nbsp;</td>
 			</tr>
+			
 			<?php
 				$queryCmt=mysql_query("select * from comment where id='".$_GET['index']."'");
 
-
+				while($data=mysql_fetch_array($queryCmt)){
+					echo'<tr>
+						<td colspan="2">
+							<font size="4">&nbsp;'.$data['name'].'</font><p align="justify">
+								<font size="2">
+									'.$data['name'].'<br>
+								</font>
+							</p>
+						</td>
+					</tr>';
+				}
 			?>
 		</table>
 

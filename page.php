@@ -137,7 +137,7 @@
 			<?php
 				$query=mysql_query("select * from comment where id='".$_GET['index']."'");
 
-				$row=mysql_fetch_row($row);
+				$row=mysql_fetch_row($query);
 
 				while($data=mysql_fetch_array($query)){
 					echo'<tr>

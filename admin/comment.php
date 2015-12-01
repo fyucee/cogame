@@ -21,7 +21,7 @@
 								?>
 							</tr>
 								<?php
-									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'");
+									$queryCmt=mysql_query("select * from comment where id='".$_GET['id']."'") or die(mysql_error());
 
 									$row=mysql_fetch_row($queryCmt);
 

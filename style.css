@@ -111,7 +111,7 @@ textarea{
 }
 textarea#comment{
 	width:423px;
-	height:100px;
+	height:40px;
 	resize: none;
 }
 img#edit{

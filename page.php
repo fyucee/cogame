@@ -131,30 +131,26 @@
 					</tr>
 				</form>
 			</tr>
-			<tr>
-			<td colspan="4">&nbsp;</td>
-			<tr>
 			<?php
 				$queryCmt=mysql_query("select * from comment where id='".$_GET['index']."'");
 
 				$row=mysql_fetch_row($queryCmt);
 				
-				while($data=mysql_fetch_array($queryCmt)){
-				echo'
+				?>
 					<table align="center" id="posted" width="1130">
 						<tr>
-							<td colspan="2" width="750"><font size="4"><b>&nbsp;'.$data['name'].'</b>, said:</font>
-							<td colspan="2" width="380">&nbsp;</td>
+							<td colspan="2" width="750">
+								<?php
+									while($data=mysql_fetch_array($queryCmt)){
+										echo'
+											<font size="4"><b>&nbsp;'.$data['name'].'</b>, said:</font>
+											<br>&nbsp;'.$data['comment'].'<br>';
+								?>
+							</td>
+							<td colspan="2" width="380">&nbsp;</td>';
 						</tr>
-						<tr>
-							<td colspan="2" width="750">&nbsp;'.$data['comment'].'</td>
-							<td colspan="2" width="380">&nbsp;</td>
-						</tr>';
-				}
-
-				if($row>0){
-					echo '<tr><td colspan="2" width="750">&nbsp;</td></tr></table>';
-				}
+					</table>
+				<?php
 			?>
 		</table>
 

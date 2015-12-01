@@ -27,7 +27,7 @@
 
 									while($data=mysql_fetch_array($queryCmt)){
 										echo '<tr><td>'.$data['name'].'</td></tr>';
-										echo '<tr><td>'.$data['email'].'</td></tr>';
+										echo '<tr><td>'.$data['mail'].'</td></tr>';
 										echo '<tr><td>'.$data['comment'].'</td></tr>';
 									}
 

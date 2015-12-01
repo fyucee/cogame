@@ -141,9 +141,9 @@
 				while($data=mysql_fetch_array($queryCmt)){
 					echo'<tr>
 						<td colspan="2">
-							<font size="4">&nbsp;'.$data['name'].'</font><p align="justify">
+							<font size="4">&nbsp;<b>'.$data['name'].'</b>, said:</font><p align="justify">
 								<font size="2">
-									'.$data['name'].'
+									'.$data['id'].'
 								</font>
 							</p><br><br>
 						</td>

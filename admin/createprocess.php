@@ -18,7 +18,7 @@
 						date_default_timezone_set('Asia/Jakarta');
 						$date = date('Y-m-d H:i:s', time());
 
-						$query=mysql_query("insert into posted values(null,'".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')") or die (mysql_error());
+						$query=mysql_query("insert into posted values(null,'".$_POST['title']."','".$_POST['isi']."','".$_POST['cat']."','$image','$date','0')");
 
 						if(!$query){
 							echo "<script>alert('Posting Failed');

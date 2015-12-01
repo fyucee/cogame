@@ -105,7 +105,11 @@
 				<form action="commentprocess.php" method="post">
 					<tr>
 						<td width="120"><font size="5">&nbsp;&nbsp;Name</td>
-						<td><input name="name" type="text" style="width:423" maxlength="58" placeholder="Type your name here"></input></td>
+						<td><input name="name" type="text" style="width:423" maxlength="58" placeholder="Type your name here"></input>
+							<?php	
+								echo'<input name="id" type="hidden" value="'.$_GET['index'].'">';
+							?>
+						</td>
 					</tr>
 					<tr>
 						<td width="80"><font size="5">&nbsp;&nbsp;Email</td>

@@ -108,6 +108,7 @@
 						<td><input name="name" type="text" style="width:423" maxlength="58" placeholder="Type your name here"></input>
 							<?php	
 								echo'<input name="id" type="hidden" value="'.$_GET['index'].'">';
+								echo'<input name="title" type="hidden" value="'.$_GET['title'].'">';
 							?>
 						</td>
 					</tr>

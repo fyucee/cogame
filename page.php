@@ -14,7 +14,7 @@
 			include('header.html');
 			$x=0;
 		?>
-		<table align="center" id="posted" width="1130">
+		<table align="center" id="posted" width="1130" border="5">
 			<tr align="center">
 				<td rowspan="9" colspan="2" width="750"><p id="title" align="center">
 					<?php
@@ -143,9 +143,9 @@
 						<td colspan="2">
 							<font size="4">&nbsp;'.$data['name'].'</font><p align="justify">
 								<font size="2">
-									'.$data['comment'].'<br>
+									'.$data['name'].'
 								</font>
-							</p>
+							</p><p align="center">&nbsp;</p>
 						</td>
 					</tr>';
 				}

@@ -33,7 +33,12 @@
 							<tr>
 								<td colspan="5" align="center">
 									<?php
-										include('post.php');
+										if(!isset($_GET['id'])){
+											include('post.php');
+										}
+										else{
+											include('comment.php');
+										}
 									?>
 								</td>
 							</tr>
